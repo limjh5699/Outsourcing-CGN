@@ -1,0 +1,50 @@
+.background {
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+}
+
+.container {
+  max-width: 1296px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav {
+  width: 810px;
+  height: 100%;
+}
+
+.nav li {
+  display: inline-block;
+  width: 130px;
+  height: 100%;
+  list-style: none;
+  font-size: 1px;
+  line-height: 100px;
+}
+
+.li_left {
+  text-align: left;
+}
+
+.li_center {
+  text-align: center;
+}
+
+.li_right {
+  text-align: right;
+}
+
+li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
