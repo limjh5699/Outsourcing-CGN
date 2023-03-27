@@ -17,7 +17,7 @@
 }
 
 .background .contents {
-  height: 70vh;
+  height: 45rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

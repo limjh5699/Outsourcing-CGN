@@ -7,8 +7,8 @@
 
 .background .content {
   position: absolute;
-  left: 11vw;
-  bottom: 22vh;
+  left: 13.2rem;
+  bottom: 13rem;
   display: flex;
   flex-direction: column;
 }
