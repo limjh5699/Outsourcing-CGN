@@ -1,6 +1,5 @@
 .background {
-  width: 100%;
-  height: 960px;
+  height: 100vh;
   margin: 0 auto;
   background-color: #011633;
   display: flex;
@@ -10,7 +9,6 @@
 
 .top {
   position: relative;
-  width: 100%;
 }
 
 .top span {
@@ -18,7 +16,7 @@
   color: #6565fa;
   top: 35px;
   right: 35px;
-  font-size: 35px;
+  font-size: 2.2rem;
   font-weight: 800;
 }
 
@@ -31,19 +29,19 @@
 }
 
 .middle .text1 {
-  font-size: 46px;
+  font-size: 2.8rem;
   font-weight: 400;
   color: #5ae676;
 }
 
 .middle .text2 {
-  font-size: 55px;
+  font-size: 3.4rem;
   font-weight: 400;
   color: #fff;
 }
 
 .middle .text3 {
-  font-size: 28px;
+  font-size: 1.7rem;
   font-weight: 400;
   color: #5ae676;
   text-align: center;
