@@ -28,13 +28,13 @@
   font-size: 2rem;
   border: none;
   background-color: #0a0e37;
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
 
 .background .container .title,
 .background .container .subTitle {
-  color: white;
+  color: #fff;
   text-align: center;
 }
 .background .container .title {
@@ -52,7 +52,7 @@
   width: 21.3rem;
   height: 3.8rem;
   margin-top: 1.1rem;
-  color: white;
+  color: #fff;
   background-color: #6045e4;
   border: none;
   cursor: pointer;

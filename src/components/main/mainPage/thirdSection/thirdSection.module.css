@@ -26,20 +26,20 @@
 .background .contents .text .title {
   font-size: 3.8rem;
   font-weight: 800;
-  color: white;
+  color: #fff;
 }
 
 .background .contents .text .subTitle {
   font-size: 1rem;
   font-weight: 400;
-  color: white;
+  color: #fff;
 }
 
 .background .contents .cards .card {
   width: 19.2rem;
   height: 31rem;
   margin: 0.7rem;
-  background-color: black;
+  background-color: #000;
   border-radius: 10px;
   display: inline-block;
 }
@@ -58,7 +58,7 @@
 }
 
 .background .contents .cards .card .info .name {
-  color: white;
+  color: #fff;
   font-weight: 700;
   font-size: 1.4rem;
   margin-top: 2rem;
