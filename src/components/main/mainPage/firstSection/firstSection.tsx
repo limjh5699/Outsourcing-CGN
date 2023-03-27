@@ -2,7 +2,7 @@ import styles from "./firstSection.module.css";
 
 import { useState, useRef } from "react";
 
-import Modal from "../modal/modal";
+import Modal from "./modal/modal";
 
 const FirstSection = () => {
   const [modalOpen, setModalOpen] = useState(false);
