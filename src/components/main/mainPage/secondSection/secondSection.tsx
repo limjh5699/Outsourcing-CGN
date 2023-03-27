@@ -1,5 +1,7 @@
 import styles from "./secondSection.module.css";
 
+import Marquee from "react-fast-marquee";
+
 const SecondSection = () => {
   return (
     <div className={styles.background}>
@@ -17,15 +19,20 @@ const SecondSection = () => {
           한국 교회를 섬기는 퐁당이 함께합니다.
         </p>
       </div>
-      {/* https://blogpack.tistory.com/1120 무한 롤링 배너 */}
       <div className={styles.bottom}>
-        <div className={styles.wrap}>
-          <div className={styles.roller}>
-            <ul>
-              <li>&nbsp;&nbsp;fondant Media Conference 2023</li>
-            </ul>
-          </div>
-        </div>
+        <Marquee
+          style={{
+            height: "100%",
+            color: "#6565FA",
+            fontSize: "30px",
+            fontWeight: "400",
+          }}
+          gradient={false}
+        >
+          fondant Media Conference 2023 &nbsp; fondant Media Conference 2023
+          &nbsp; fondant Media Conference 2023 &nbsp; fondant Media Conference
+          2023 &nbsp; fondant Media Conference 2023 &nbsp;
+        </Marquee>
       </div>
     </div>
   );
