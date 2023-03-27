@@ -5,7 +5,7 @@
 }
 
 .container {
-  max-width: 1296px;
+  max-width: 80rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -14,10 +14,10 @@
 
 .nav li {
   display: inline-block;
-  width: 130px;
+  width: 8rem;
   height: 100%;
   list-style: none;
-  line-height: 100px;
+  line-height: 8rem;
 }
 
 .li_left {

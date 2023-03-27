@@ -8,7 +8,7 @@
 .background .content {
   position: absolute;
   left: 11vw;
-  bottom: 20vh;
+  bottom: 22vh;
   display: flex;
   flex-direction: column;
 }
@@ -19,18 +19,18 @@
 }
 
 .background .content .info h3 {
-  margin-top: 20px;
+  margin-top: 0.5rem;
   color: #fff;
   font-size: 1.7rem;
 }
 
 .background .content .btn {
   color: #011633;
-  height: 85px;
+  height: 3rem;
   font-weight: 900;
   font-size: 1.6rem;
   background-color: #5ae676;
   cursor: pointer;
   border-radius: 15px;
-  margin-top: 50px;
+  margin-top: 2.3rem;
 }

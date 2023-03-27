@@ -24,7 +24,7 @@ const SecondSection = () => {
           style={{
             height: "100%",
             color: "#6565FA",
-            fontSize: "30px",
+            fontSize: "2rem",
             fontWeight: "400",
           }}
           gradient={false}
