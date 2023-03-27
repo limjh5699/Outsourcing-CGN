@@ -1,6 +1,36 @@
 .background {
   height: 100vh;
   margin: 0 auto;
-  background: url("../../../../assets/mainPage/first.png") no-repeat;
+  background: url("../../../../assets/mainPage/background.png") no-repeat;
   background-size: 100% 100%;
+}
+
+.background .content {
+  position: absolute;
+  left: 11vw;
+  bottom: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.background .content .info h1 {
+  color: #fff;
+  font-size: 2.8rem;
+}
+
+.background .content .info h3 {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+.background .content .btn {
+  color: #011633;
+  height: 85px;
+  font-weight: 900;
+  font-size: 1.6rem;
+  background-color: #5ae676;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-top: 50px;
 }

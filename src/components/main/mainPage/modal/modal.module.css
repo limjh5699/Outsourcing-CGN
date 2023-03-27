@@ -1,0 +1,61 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.753);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background .container {
+  position: relative;
+  width: 431px;
+  height: 561px;
+  border-radius: 20px;
+  background-color: #0a0e37;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background .container .exitBtn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 2rem;
+  border: none;
+  background-color: #0a0e37;
+  color: white;
+  cursor: pointer;
+}
+
+.background .container .title,
+.background .container .subTitle {
+  color: white;
+  text-align: center;
+}
+.background .container .title {
+  color: #5ae676;
+  margin-bottom: 10px;
+}
+
+.background .container .btnArea {
+  width: 341px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.background .container .btnArea .btn {
+  width: 341px;
+  height: 61px;
+  margin-top: 20px;
+  color: white;
+  background-color: #6045e4;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
