@@ -1,0 +1,107 @@
+.background {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5ae676;
+}
+
+.background span {
+  position: absolute;
+  color: #6045e4;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.background .contents {
+  height: 50rem;
+  width: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.background .contents .text .title {
+  font-size: 3.8rem;
+  font-weight: 800;
+  color: #000;
+}
+
+.background .contents .text .subTitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.background .contents .container {
+  width: 80rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background .contents .container .top {
+  display: flex;
+  align-items: center;
+}
+
+.background .contents .container .top img {
+  width: 50px;
+  height: 50px;
+}
+
+.background .contents .container .top h1 {
+  display: inline-block;
+  margin: 0 0.8rem;
+  color: #6045e4;
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+
+.background .contents .container .mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background .contents .container .mid p {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 1.8rem;
+}
+
+.background .contents .container .mid .gift {
+  width: 28rem;
+  height: 14rem;
+  border-radius: 30px;
+  margin-top: 1.8rem;
+  background-color: #d6d6d6;
+}
+
+.background .contents .container .bottom {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.background .contents .container .bottom .rectangle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  margin: 0 1rem;
+  background-color: #fff;
+}
+
+.background .contents .container .bottom .rectangle p {
+  margin-top: 1.3rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+}
