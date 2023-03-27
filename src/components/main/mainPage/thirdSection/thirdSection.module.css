@@ -1,0 +1,73 @@
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6045e4;
+}
+
+.background span {
+  position: absolute;
+  color: #011633;
+  top: 35px;
+  right: 35px;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.background .contents {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.background .contents .text .title {
+  font-size: 3.8rem;
+  font-weight: 800;
+  color: white;
+}
+
+.background .contents .text .subTitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+.background .contents .cards .card {
+  width: 307px;
+  height: 492px;
+  margin: 10px;
+  background-color: black;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.background .contents .cards .card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background .contents .cards .card .info .title {
+  margin-top: 40px;
+  color: #5ae676;
+  text-align: center;
+}
+
+.background .contents .cards .card .info .name {
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: 40px;
+}
+
+.background .contents .cards .card .info .company {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1em;
+}
