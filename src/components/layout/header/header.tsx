@@ -24,7 +24,7 @@ const Header = () => {
             <Link to={"/"}>행사장</Link>
           </li>
           <li className={styles.li_left}>
-            <Link to={"/"}>이벤트</Link>
+            <Link to={"/event"}>이벤트</Link>
           </li>
         </ul>
       </div>

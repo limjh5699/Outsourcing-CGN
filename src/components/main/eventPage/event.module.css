@@ -1,0 +1,168 @@
+.background {
+  height: 144rem;
+  background-color: #001633;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background .size {
+  width: 67vw;
+  margin: 0 auto;
+}
+
+.background .size h1 {
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+.background .size .contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background .size .contents .box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.background .size .contents .box1 .textBox {
+  display: flex;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.background .size .contents .box1 .textBox img {
+  width: 40px;
+  height: 40px;
+}
+
+.background .size .contents .box1 .textBox h1 {
+  font-size: 2.5rem;
+  margin: 0 1rem;
+}
+
+.background .size .contents .box1 p {
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.background .size .contents .box1 .mapImg {
+  margin-top: 2rem;
+}
+
+.background .size .contents .box2 {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background .size .contents .box2 h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #5ae676;
+}
+
+.background .size .contents .box2 table {
+  width: 100%;
+  border-top: 1px solid #8a8fc1;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.background .size .contents .box2 td {
+  color: #fff;
+  border-bottom: 1px solid #8a8fc1;
+  padding: 10px;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.background .size .contents .box2 td:first-child {
+  border-right: 1px solid #8a8fc1;
+}
+
+.background .size .contents .box2 img {
+  width: 70px;
+  height: 70px;
+}
+
+.background .size .contents .box3 {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background .size .contents .box3 h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #5ae676;
+}
+
+.background .size .contents .box3 table {
+  width: 100%;
+  border-top: 1px solid #8a8fc1;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.background .size .contents .box3 td {
+  color: #fff;
+  border-bottom: 1px solid #8a8fc1;
+  padding: 10px;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.background .size .contents .box3 td:first-child {
+  border-right: 1px solid #8a8fc1;
+}
+
+.background .size .contents .box3 img {
+  width: 70px;
+  height: 70px;
+}
+
+.background .size .contents .box4 {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background .size .contents .box4 h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #5ae676;
+}
+
+.background .size .contents .box4 table {
+  width: 100%;
+  border-top: 1px solid #8a8fc1;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.background .size .contents .box4 td {
+  color: #fff;
+  border-bottom: 1px solid #8a8fc1;
+  padding: 10px;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.background .size .contents .box4 td:first-child {
+  border-right: 1px solid #8a8fc1;
+}
+
+.background .size .contents .box4 img {
+  width: 70px;
+  height: 70px;
+}

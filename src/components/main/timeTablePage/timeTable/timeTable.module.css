@@ -1,5 +1,5 @@
 .background {
-  height: 200vh;
+  height: 118rem;
   background-color: #001633;
   display: flex;
   justify-content: center;
@@ -8,7 +8,6 @@
 
 .background .contents {
   width: 67vw;
-  height: 165vh;
   margin: 0 auto;
 }
 
