@@ -45,18 +45,20 @@ const SecondSection = () => {
             최대한 2인까지 무료로 [FMC 2023] 을 참여하실 수 있습니다.
           </p>
           <table>
-            <tr>
-              <td width={"23%"}>가입 대상</td>
-              <td>국내/외 교회</td>
-            </tr>
-            <tr>
-              <td width={"23%"}>가입 기간</td>
-              <td>2023년 4월 10일 ~ 5월 21일</td>
-            </tr>
-            <tr>
-              <td width={"23%"}>가입 방법</td>
-              <td>퐁당 네트워크 교회 가입 신청서 작성</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td width={"23%"}>가입 대상</td>
+                <td>국내/외 교회</td>
+              </tr>
+              <tr>
+                <td width={"23%"}>가입 기간</td>
+                <td>2023년 4월 10일 ~ 5월 21일</td>
+              </tr>
+              <tr>
+                <td width={"23%"}>가입 방법</td>
+                <td>퐁당 네트워크 교회 가입 신청서 작성</td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <div className={styles.bottom}>
