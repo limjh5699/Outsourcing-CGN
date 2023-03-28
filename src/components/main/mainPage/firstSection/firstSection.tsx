@@ -1,8 +1,10 @@
-import styles from "./firstSection.module.css";
-
 import { useState, useRef } from "react";
 
+import styles from "./firstSection.module.css";
+
 import Modal from "./modal/modal";
+
+import title from "../../../../assets/mainPage/title.png";
 
 const FirstSection = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -12,6 +14,7 @@ const FirstSection = () => {
     <div className={styles.background}>
       {modalOpen && <Modal setModalOpen={setModalOpen} modalRef={modalRef} />}
       <div className={styles.content}>
+        <img src={title} alt="title" className={styles.img} />
         <div className={styles.info}>
           <h1>
             <b>2023.5.29.(월)</b>
