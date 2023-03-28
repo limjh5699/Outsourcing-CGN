@@ -1,0 +1,9 @@
+.background {
+  height: 100vh;
+  background-color: #fff;
+}
+
+.background .title {
+  width: 80rem;
+  background-color: aqua;
+}
