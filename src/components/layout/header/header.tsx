@@ -15,7 +15,7 @@ const Header = () => {
             <Link to={"/regist"}>참가 신청</Link>
           </li>
           <li className={styles.li_left}>
-            <Link to={"/"}>타임 테이블</Link>
+            <Link to={"/time"}>타임 테이블</Link>
           </li>
           <li className={styles.li_left}>
             <Link to={"/"}>자주 묻는 질문</Link>
