@@ -104,16 +104,3 @@
   box-shadow: 0 15px 3px #00000025;
   background-color: #000;
 }
-
-.vertical {
-  border: 1px solid #fff;
-}
-
-@keyframes chatBox {
-  0% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: 10px;
-  }
-}
