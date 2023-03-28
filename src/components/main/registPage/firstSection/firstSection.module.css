@@ -51,7 +51,7 @@
 
 .background .contents .box .dashes {
   height: 10rem;
-  border: 1px dashed #000;
+  border: 0.1rem dashed #000;
 }
 
 .background .contents .box .price {
