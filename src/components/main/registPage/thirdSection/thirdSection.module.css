@@ -1,0 +1,119 @@
+.background {
+  position: relative;
+  height: 100vh;
+  background-color: #5ae676;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background .contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background .contents .top .title {
+  padding: 1rem 5rem;
+  background-color: #003175;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.background .contents .mid {
+  margin-top: 4rem;
+}
+
+.background .contents .mid h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000;
+}
+
+.background .contents .mid p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+.background .contents .mid .container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.background .contents .mid .container .box {
+  width: 8rem;
+  height: 11rem;
+  border-radius: 15px;
+  background-color: #6045e4;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.background .contents .mid .container .box p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.background .contents .mid .container .box div {
+  width: 7rem;
+  height: 3rem;
+  color: #000;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.background .contents .mid .container .box span {
+  font-weight: 800;
+}
+
+.background .contents .bottom {
+  margin-top: 4rem;
+}
+
+.background .contents .bottom button {
+  font-size: 1.4rem;
+  font-weight: 800;
+  width: 23rem;
+  height: 5rem;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 15px 3px #00000025;
+  background-color: #000;
+}
+
+.vertical {
+  border: 1px solid #fff;
+}
+
+@keyframes chatBox {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
