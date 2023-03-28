@@ -1,6 +1,30 @@
+import { useEffect } from "react";
 import styles from "./fifthSection.module.css";
 
+const { kakao }: any = window;
+
 const FifthSection = () => {
+  useEffect(() => {
+    let container = document.getElementById("map");
+    let options = {
+      center: new kakao.maps.LatLng(37.46624030654503, 127.03276428109496),
+      level: 3,
+    };
+
+    let markerPosition = new kakao.maps.LatLng(
+      37.46624030654503,
+      127.03276428109496
+    );
+
+    let marker = new kakao.maps.Marker({
+      position: markerPosition,
+    });
+
+    let map = new kakao.maps.Map(container, options);
+
+    marker.setMap(map);
+  });
+
   return (
     <div className={styles.background}>
       <span>FMC 2023</span>
@@ -10,7 +34,7 @@ const FifthSection = () => {
         </div>
         <div className={styles.mapArea}>
           <p>서울 서초구 바우뫼르 12길 70 더케이호텔서울 그랜드볼룸홀</p>
-          <div className={styles.map}></div>
+          <div id="map" className={styles.map}></div>
         </div>
         <div className={styles.traffic}>
           <div className={styles.trail}>
