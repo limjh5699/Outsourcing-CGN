@@ -1,0 +1,92 @@
+.background {
+  position: relative;
+  height: 100vh;
+  background-color: #011633;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background .contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background .contents .top .title {
+  padding: 1rem 1.5rem;
+  background-color: #003175;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.background .contents .mid {
+  margin-top: 4rem;
+}
+
+.background .contents .mid h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.background .contents .mid p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+.background .contents .mid table {
+  width: 100%;
+  margin-top: 3rem;
+  border-top: 1px solid #fff;
+  border-collapse: collapse;
+}
+
+.background .contents .mid tr td {
+  border-bottom: 1px solid #fff;
+  padding: 1.5rem 1.3rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.background .contents .mid tr td:first-child {
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+
+.background .contents .mid tr td:nth-child(2) {
+  font-weight: 700;
+}
+
+.background .contents .bottom {
+  margin-top: 3rem;
+}
+
+.background .contents .bottom button {
+  font-size: 1.4rem;
+  font-weight: 800;
+  width: 23rem;
+  height: 5rem;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 15px 3px #00000025;
+  background-color: #5ae676;
+}
+
+.vertical {
+  border: 1px solid #fff;
+}
+
+@keyframes chatBox {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
