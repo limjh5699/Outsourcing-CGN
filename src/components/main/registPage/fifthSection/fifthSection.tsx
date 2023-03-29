@@ -2,7 +2,7 @@ import styles from "./fifthSection.module.css";
 
 const FifthSection = () => {
   return (
-    <div className={styles.background}>
+    <div className={styles.background} id="fifthSection">
       <div className={styles.contents}>
         <div className={styles.top}>
           <p className={styles.title}>[무료4] 우리 교회는 퐁당 네트워크 교회</p>

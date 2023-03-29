@@ -2,7 +2,7 @@ import styles from "./thirdSection.module.css";
 
 const ThirdSection = () => {
   return (
-    <div className={styles.background}>
+    <div className={styles.background} id="thirdSection">
       <div className={styles.contents}>
         <div className={styles.top}>
           <p className={styles.title}>[무료2] 나는 솔로</p>

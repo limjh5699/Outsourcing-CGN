@@ -1,37 +1,81 @@
+import { useState, useEffect, useMemo } from "react";
+import { throttle } from "lodash";
+import { Link } from "react-scroll";
+
 import styles from "./secondSection.module.css";
 
 const SecondSection = () => {
+  const [scrollEvent, setScrollEvent] = useState(false);
+  const [viewSection, setViewSection] = useState(2);
+
+  console.log(window.scrollY);
+
+  const onScrollFn = useMemo(
+    () =>
+      throttle(() => {
+        if (window.scrollY > 110) {
+          setScrollEvent(true);
+        } else {
+          setScrollEvent(false);
+        }
+      }, 0),
+    []
+  );
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScrollFn);
+    return () => {
+      window.removeEventListener("scroll", onScrollFn);
+    };
+  }, []);
+
   return (
-    <div className={styles.background}>
+    <div className={styles.background} id="secondSection">
       <div className={styles.chatBox}>무료로 참여하는 방법 알아보기</div>
-      <div className={styles.topBar}>
-        <div className={styles.selectedBox}>
+      <div className={scrollEvent ? styles.scrollTopBar : styles.topBar}>
+        <Link
+          to="secondSection"
+          className={styles.box}
+          style={viewSection === 2 ? { backgroundColor: "#6045e4" } : {}}
+        >
           <p>
             퐁당 네트워크
             <br />
             교회 가입
           </p>
-        </div>
+        </Link>
         <div className={styles.border}></div>
-        <div className={styles.box}>
+        <Link
+          to="thirdSection"
+          className={styles.box}
+          style={viewSection === 3 ? { backgroundColor: "#5ae676" } : {}}
+        >
           <p>
             개인
             <br />
             참가자 등록
           </p>
-        </div>
+        </Link>
         <div className={styles.border}></div>
-        <div className={styles.box}>
+        <Link
+          to="fourthSection"
+          className={styles.box}
+          style={viewSection === 4 ? { backgroundColor: "#011633" } : {}}
+        >
           <p>신학생 인증</p>
-        </div>
+        </Link>
         <div className={styles.border}></div>
-        <div className={styles.box}>
+        <Link
+          to="fifthSection"
+          className={styles.box}
+          style={viewSection === 5 ? { backgroundColor: "#5ae676" } : {}}
+        >
           <p>
             퐁당 네트워크
             <br />
             교회 인증
           </p>
-        </div>
+        </Link>
       </div>
       <div className={styles.contents}>
         <div className={styles.top}>

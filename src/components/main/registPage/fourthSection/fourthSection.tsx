@@ -2,7 +2,7 @@ import styles from "./fourthSection.module.css";
 
 const FourthSection = () => {
   return (
-    <div className={styles.background}>
+    <div className={styles.background} id="fourthSection">
       <div className={styles.contents}>
         <div className={styles.top}>
           <p className={styles.title}>[무료3] 산학 하는 요즘 애들 모여라!</p>

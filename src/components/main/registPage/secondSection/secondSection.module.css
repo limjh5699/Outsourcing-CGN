@@ -36,11 +36,23 @@
 }
 
 .background .topBar {
-  width: 100vw;
+  width: 100%;
   height: 7rem;
   display: flex;
   position: absolute;
   top: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #011633;
+  z-index: 9999;
+}
+
+.background .scrollTopBar {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  position: fixed;
+  bottom: 0;
   justify-content: center;
   align-items: center;
   background-color: #011633;
@@ -53,16 +65,18 @@
   font-size: 1.5rem;
 }
 
-.background .topBar .box,
-.background .topBar .selectedBox {
+.background .scrollTopBar p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.background .box,
+.background .selectedBox {
   display: flex;
   align-items: center;
   height: 100%;
   padding: 0 4rem;
-}
-
-.background .topBar .selectedBox {
-  background-color: #6045e4;
 }
 
 .border {
