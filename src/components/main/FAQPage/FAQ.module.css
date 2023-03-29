@@ -1,0 +1,85 @@
+.background {
+  min-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding-bottom: 20rem;
+}
+
+.background .contents {
+  margin: 10.3rem auto 0 auto;
+  width: 67vw;
+}
+
+.background .contents h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.background .contents .topBar {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.background .contents .topBar button {
+  font-size: 1.5rem;
+  width: 17rem;
+  height: 3rem;
+  border: 1px solid #6045e4;
+  border-radius: 5px;
+  background: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.background .contents .topBar .topActive {
+  color: #fff;
+  background-color: #6045e4;
+}
+
+.background .contents .faq {
+  margin-top: 5rem;
+  border-top: 1px solid #000;
+}
+
+.background .contents .faq .container .table {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  display: flex;
+  cursor: pointer;
+}
+
+.background .contents .faq div {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.background .contents .faq .container .table .title {
+  width: 15%;
+  padding: 1.3rem;
+  text-align: center;
+}
+
+.background .contents .faq .container .table .subTitle {
+  width: 75%;
+  padding: 1.3rem 0;
+}
+
+.background .contents .faq .container .table .icon {
+  padding: 1.3rem 0;
+}
+
+.background .contents .faq .container .contentSection {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #000;
+}
+
+.background .contents .faq .container .contentSection pre {
+  padding: 0.5rem 10.6vw;
+  line-height: 2rem;
+}
+
+.background .contents .faq .container .close {
+  display: none;
+}

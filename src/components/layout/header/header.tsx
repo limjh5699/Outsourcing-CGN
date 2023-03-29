@@ -1,6 +1,8 @@
-import styles from "./header.module.css";
-import logo from "../../../assets/layout/logo.png";
 import { Link } from "react-router-dom";
+
+import styles from "./header.module.css";
+
+import logo from "../../../assets/layout/logo.png";
 
 const Header = () => {
   return (
@@ -18,7 +20,7 @@ const Header = () => {
             <Link to={"/time"}>타임 테이블</Link>
           </li>
           <li className={styles.li_left}>
-            <Link to={"/"}>자주 묻는 질문</Link>
+            <Link to={"/FAQ"}>자주 묻는 질문</Link>
           </li>
           <li className={styles.li_center}>
             <Link to={"/place"}>행사장</Link>
