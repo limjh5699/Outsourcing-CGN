@@ -1,7 +1,10 @@
 .background {
   position: relative;
-  height: 112vh;
+  height: 60rem;
   background-color: #6045e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .background .chatBox {
@@ -33,11 +36,15 @@
 }
 
 .background .topBar {
-  height: 12vh;
+  width: 100vw;
+  height: 7rem;
   display: flex;
+  position: absolute;
+  top: 0;
   justify-content: center;
   align-items: center;
   background-color: #011633;
+  z-index: 9999;
 }
 
 .background .topBar p {
@@ -67,7 +74,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10rem;
 }
 
 .background .contents .top .title {
