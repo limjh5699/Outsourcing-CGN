@@ -2,13 +2,11 @@
   height: 118rem;
   background-color: #001633;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .background .contents {
   width: 67vw;
-  margin: 0 auto;
+  margin: 10.3rem auto 0 auto;
 }
 
 .background .contents h1 {

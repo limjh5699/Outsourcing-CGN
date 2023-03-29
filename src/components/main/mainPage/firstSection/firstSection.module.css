@@ -1,5 +1,5 @@
 .background {
-  height: 100vh;
+  height: 60rem;
   margin: 0 auto;
   background: url("../../../../assets/mainPage/background.png") no-repeat;
   background-size: 100% 100%;
@@ -11,8 +11,8 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin-left: 13vw;
-  margin-top: 13vh;
+  margin-left: 14rem;
+  margin-top: 3rem;
 }
 
 .background .content .img {

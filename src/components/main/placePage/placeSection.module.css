@@ -1,8 +1,6 @@
 .background {
   height: 145rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   background-color: #fff;
   color: #000;
@@ -10,7 +8,7 @@
 
 .background .contents {
   width: 67vw;
-  height: 124rem;
+  margin: 10.3rem auto 0 auto;
 }
 
 .background .contents h1 {

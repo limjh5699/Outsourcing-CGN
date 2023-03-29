@@ -1,76 +1,73 @@
 .background {
-  height: 100vh;
+  height: 60rem;
   background: url("../../../../assets/registPage/background.png") no-repeat;
   background-size: 100% 100%;
 }
 
-.background .title {
-  max-width: 80rem;
-  padding-top: 10rem;
+.background .size {
+  width: 67vw;
   margin: 0 auto;
+  padding-top: 10.3rem;
 }
 
-.background .title p {
-  color: #fff;
-  font-size: 3.8rem;
-  font-weight: 800;
-}
-
-.background .contents {
-  margin: 0 auto;
+.background .size .contents {
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.background .contents h1 {
+.background .size h1 {
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+.background .size .contents h2 {
   color: #5ae676;
   font-size: 3.3rem;
   font-weight: 700;
   text-align: center;
 }
 
-.background .contents .day {
+.background .size .contents .day {
   margin-top: 2rem;
   color: #fff;
   font-size: 2rem;
   font-weight: 400;
+  text-align: center;
 }
 
-.background .contents .box {
+.background .size .contents .box {
   height: 18rem;
   border-radius: 40px;
-  margin-top: 2rem;
+  margin: 2rem auto 0 auto;
   background-color: #5ae676;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.background .contents .box .dashes {
+.background .size .contents .box .dashes {
   height: 10rem;
   border: 0.1rem dashed #000;
 }
 
-.background .contents .box .price {
+.background .size .contents .box .price {
   margin-top: 1.5rem;
 }
 
-.background .contents .box p {
+.background .size .contents .box p {
   color: #000;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 600;
 }
 
-.background .contents .box .box1,
-.background .contents .box .box2,
-.background .contents .box .box3 {
+.background .size .contents .box .box1,
+.background .size .contents .box .box2,
+.background .size .contents .box .box3 {
   margin: 0 3rem;
 }
 
-.background .contents .box .box3 p {
+.background .size .contents .box .box3 p {
   font-weight: 900;
 }
