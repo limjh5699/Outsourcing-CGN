@@ -21,7 +21,7 @@ const Header = () => {
             <Link to={"/"}>자주 묻는 질문</Link>
           </li>
           <li className={styles.li_center}>
-            <Link to={"/"}>행사장</Link>
+            <Link to={"/place"}>행사장</Link>
           </li>
           <li className={styles.li_left}>
             <Link to={"/event"}>이벤트</Link>

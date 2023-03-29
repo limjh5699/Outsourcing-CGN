@@ -1,0 +1,97 @@
+.background {
+  height: 145rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+}
+
+.background .contents {
+  width: 67vw;
+  height: 124rem;
+}
+
+.background .contents h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.background .contents .mapArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.background .contents .mapArea p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.background .contents .mapArea .map {
+  margin-top: 3.5rem;
+  width: 100%;
+  height: 40rem;
+}
+
+.background .contents .traffic {
+  margin-top: 5rem;
+}
+
+.background .contents .traffic h2,
+.background .contents .traffic p,
+.background .contents .traffic li {
+  line-height: 1.8rem;
+  font-weight: 700;
+}
+
+.background .contents .traffic h2 {
+  font-size: 2rem;
+}
+
+.background .contents .traffic p {
+  font-size: 1.1rem;
+}
+
+.background .contents .traffic li {
+  font-size: 1.1rem;
+  margin-left: 1.5rem;
+}
+
+.background .contents .traffic .trail p {
+  margin-top: 1rem;
+}
+
+.background .contents .traffic .bus {
+  margin-top: 4rem;
+}
+
+.background .contents .traffic .bus .container {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.background .contents .traffic .bus .container .two {
+  margin-left: 7rem;
+}
+
+.background .contents .traffic .parking {
+  margin-top: 4rem;
+}
+
+.background .contents .traffic .parking p {
+  margin-top: 1rem;
+}
+
+.background .contents .imgSection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.background .contents .imgSection img {
+  width: 400px;
+  height: 400px;
+}
