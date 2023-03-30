@@ -6,9 +6,7 @@ import styles from "./secondSection.module.css";
 
 const SecondSection = () => {
   const [scrollEvent, setScrollEvent] = useState(false);
-  const [viewSection, setViewSection] = useState(2);
-
-  console.log(window.scrollY);
+  const [viewSection, setViewSection] = useState("firstSection");
 
   const onScrollFn = useMemo(
     () =>
@@ -24,19 +22,40 @@ const SecondSection = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", onScrollFn);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry: any) => {
+          if (entry.isIntersecting) {
+            setViewSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    document.querySelectorAll("section").forEach((section) => {
+      observer.observe(section);
+    });
+
     return () => {
       window.removeEventListener("scroll", onScrollFn);
+      observer.disconnect();
     };
   }, []);
 
   return (
-    <div className={styles.background} id="secondSection">
+    <section className={styles.background} id="secondSection">
       <div className={styles.chatBox}>무료로 참여하는 방법 알아보기</div>
       <div className={scrollEvent ? styles.scrollTopBar : styles.topBar}>
         <Link
           to="secondSection"
           className={styles.box}
-          style={viewSection === 2 ? { backgroundColor: "#6045e4" } : {}}
+          style={
+            viewSection === "firstSection" || viewSection === "secondSection"
+              ? { backgroundColor: "#6045e4" }
+              : {}
+          }
         >
           <p>
             퐁당 네트워크
@@ -48,7 +67,9 @@ const SecondSection = () => {
         <Link
           to="thirdSection"
           className={styles.box}
-          style={viewSection === 3 ? { backgroundColor: "#5ae676" } : {}}
+          style={
+            viewSection === "thirdSection" ? { backgroundColor: "#5ae676" } : {}
+          }
         >
           <p>
             개인
@@ -60,7 +81,11 @@ const SecondSection = () => {
         <Link
           to="fourthSection"
           className={styles.box}
-          style={viewSection === 4 ? { backgroundColor: "#011633" } : {}}
+          style={
+            viewSection === "fourthSection"
+              ? { backgroundColor: "#011633" }
+              : {}
+          }
         >
           <p>신학생 인증</p>
         </Link>
@@ -68,7 +93,9 @@ const SecondSection = () => {
         <Link
           to="fifthSection"
           className={styles.box}
-          style={viewSection === 5 ? { backgroundColor: "#5ae676" } : {}}
+          style={
+            viewSection === "fifthSection" ? { backgroundColor: "#5ae676" } : {}
+          }
         >
           <p>
             퐁당 네트워크
@@ -109,7 +136,7 @@ const SecondSection = () => {
           <button>퐁당 네트워크 교회 가입 신청서 작성</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
