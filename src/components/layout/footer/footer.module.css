@@ -50,3 +50,33 @@
   line-height: 6.5rem;
   margin-left: 3rem;
 }
+
+@media (max-width: 1445px) {
+  .background .size {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 1384px) {
+  .background .size {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1210px) {
+  .background .size {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 1080px) {
+  .background .size {
+    width: 95vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .background .size {
+    width: 90vw;
+  }
+}
