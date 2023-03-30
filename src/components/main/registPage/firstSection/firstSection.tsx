@@ -2,7 +2,7 @@ import styles from "./firstSection.module.css";
 
 const FirstSection = () => {
   return (
-    <div className={styles.background}>
+    <section id="firstSection" className={styles.background}>
       <div className={styles.size}>
         <h1>참가 신청</h1>
         <div className={styles.contents}>
@@ -43,7 +43,7 @@ const FirstSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

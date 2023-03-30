@@ -2,7 +2,7 @@ import styles from "./fifthSection.module.css";
 
 const FifthSection = () => {
   return (
-    <div className={styles.background} id="fifthSection">
+    <section className={styles.background} id="fifthSection">
       <div className={styles.contents}>
         <div className={styles.top}>
           <p className={styles.title}>[무료4] 우리 교회는 퐁당 네트워크 교회</p>
@@ -21,7 +21,7 @@ const FifthSection = () => {
           <button>FMC 2023 카카오채널 바로가기</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

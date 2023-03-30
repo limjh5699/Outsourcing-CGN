@@ -2,7 +2,7 @@ import styles from "./thirdSection.module.css";
 
 const ThirdSection = () => {
   return (
-    <div className={styles.background} id="thirdSection">
+    <section className={styles.background} id="thirdSection">
       <div className={styles.contents}>
         <div className={styles.top}>
           <p className={styles.title}>[무료2] 나는 솔로</p>
@@ -44,7 +44,7 @@ const ThirdSection = () => {
           <button>퐁당 네트워크 교회 가입 신청서 작성</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

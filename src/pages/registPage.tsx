@@ -1,6 +1,7 @@
 import FifthSection from "../components/main/registPage/fifthSection/fifthSection";
 import FirstSection from "../components/main/registPage/firstSection/firstSection";
 import FourthSection from "../components/main/registPage/fourthSection/fourthSection";
+import MyComponent from "../components/main/registPage/secondSection/secondSection";
 import SecondSection from "../components/main/registPage/secondSection/secondSection";
 import ThirdSection from "../components/main/registPage/thirdSection/thirdSection";
 

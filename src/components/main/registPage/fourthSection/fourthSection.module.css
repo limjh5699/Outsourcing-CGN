@@ -1,6 +1,6 @@
 .background {
   position: relative;
-  height: 60rem;
+  height: 100vh;
   background-color: #011633;
   display: flex;
   align-items: center;
