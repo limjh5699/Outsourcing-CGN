@@ -5,31 +5,32 @@
   background-color: #000;
 }
 
-.background .contents {
-  max-width: 80rem;
+.background .size {
   margin: 0 auto;
+  width: 67vw;
+}
+
+.background .size .contents {
   padding-top: 2.5rem;
   display: flex;
 }
 
-.background .contents .container {
+.background .size .contents .container {
   margin-left: 5rem;
 }
 
-.background .contents .container span {
+.background .size .contents .container span {
   color: #fff;
   line-height: 2.5rem;
   font-size: 1.3rem;
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 
-.background .secContents {
-  max-width: 80rem;
-  margin: 0 auto;
+.background .size .secContents {
   margin-top: 1.6rem;
 }
 
-.background .secContents span {
+.background .size .secContents span {
   color: #9e9e9e;
   line-height: 1.5rem;
   font-size: 0.85rem;
