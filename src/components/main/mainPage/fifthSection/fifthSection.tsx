@@ -1,9 +1,15 @@
 import { useEffect } from "react";
+import useScrollFadeIn from "../../../../hooks/useScrollFadeIn";
 import styles from "./fifthSection.module.css";
 
 const { kakao }: any = window;
 
 const FifthSection = () => {
+  const animatedItem = {
+    0: useScrollFadeIn({ direction: "up", duration: 1, delay: 0 }),
+    1: useScrollFadeIn({ direction: "up", duration: 1, delay: 0 }),
+  };
+
   useEffect(() => {
     let container = document.getElementById("map");
     let options = {
@@ -33,8 +39,10 @@ const FifthSection = () => {
           <h1 className={styles.title}>찾아 오시는 길</h1>
         </div>
         <div className={styles.mapArea}>
-          <p>서울 서초구 바우뫼르 12길 70 더케이호텔서울 그랜드볼룸홀</p>
-          <div id="map" className={styles.map}></div>
+          <div {...animatedItem[0]}>
+            <p>서울 서초구 바우뫼르 12길 70 더케이호텔서울 그랜드볼룸홀</p>
+          </div>
+          <div id="map" className={styles.map} {...animatedItem[1]}></div>
         </div>
         <div className={styles.traffic}>
           <div className={styles.trail}>

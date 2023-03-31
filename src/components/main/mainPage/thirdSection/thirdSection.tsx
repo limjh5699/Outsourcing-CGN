@@ -5,7 +5,13 @@ import human2 from "../../../../assets/mainPage/human2.png";
 import human3 from "../../../../assets/mainPage/human3.png";
 import human4 from "../../../../assets/mainPage/human4.png";
 
+import useScrollFadeIn from "../../../../hooks/useScrollFadeIn";
+
 const ThirdSection = () => {
+  const animatedItem = {
+    0: useScrollFadeIn({ direction: "up", duration: 1, delay: 0 }),
+  };
+
   return (
     <div className={styles.background}>
       <span>FMC 2023</span>
@@ -16,7 +22,7 @@ const ThirdSection = () => {
             다양한 분야의 전문가들의 경험과 노하우를 확인해 보세요.
           </p>
         </div>
-        <div className={styles.cards}>
+        <div className={styles.cards} {...animatedItem[0]}>
           <div className={styles.card}>
             <img className={styles.img} src={human1} alt={"이재훈"} />
             <div className={styles.info}>

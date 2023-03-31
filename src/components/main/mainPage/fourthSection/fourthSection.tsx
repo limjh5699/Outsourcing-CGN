@@ -4,8 +4,16 @@ import balloon from "../../../../assets/mainPage/balloon.png";
 import stamp from "../../../../assets/mainPage/stamp.png";
 import chat from "../../../../assets/mainPage/chat.png";
 import clover from "../../../../assets/mainPage/clover.png";
+import useScrollFadeIn from "../../../../hooks/useScrollFadeIn";
 
 const FourthSection = () => {
+  const animatedItem = {
+    0: useScrollFadeIn({ direction: "up", duration: 1, delay: 0 }),
+    1: useScrollFadeIn({ direction: "up", duration: 1, delay: 0 }),
+    2: useScrollFadeIn({ direction: "up", duration: 1, delay: 0 }),
+    3: useScrollFadeIn({ direction: "up", duration: 1, delay: 0 }),
+  };
+
   return (
     <div className={styles.background}>
       <span>FMC 2023</span>
@@ -17,19 +25,21 @@ const FourthSection = () => {
           </p>
         </div>
         <div className={styles.container}>
-          <div className={styles.top}>
+          <div className={styles.top} {...animatedItem[0]}>
             <img src={balloon} alt="balloon" />
             <h1>퐁당 미디어 콘퍼런스 100% 즐기기</h1>
             <img src={balloon} alt="balloon" />
           </div>
           <div className={styles.mid}>
-            <p>
-              5/29 당일 현장에서 다양한 이벤트가 진행됩니다! <br />꼭 참여하셔서
-              푸짐한 상품도 받아 가세요!
-            </p>
-            <div className={styles.gift}></div>
+            <div {...animatedItem[1]}>
+              <p>
+                5/29 당일 현장에서 다양한 이벤트가 진행됩니다! <br />꼭
+                참여하셔서 푸짐한 상품도 받아 가세요!
+              </p>
+            </div>
+            <div className={styles.gift} {...animatedItem[2]}></div>
           </div>
-          <div className={styles.bottom}>
+          <div className={styles.bottom} {...animatedItem[3]}>
             <div className={styles.rectangle}>
               <img src={stamp} alt="stamp" />
               <p>
