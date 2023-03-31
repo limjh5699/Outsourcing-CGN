@@ -59,3 +59,18 @@
   font-size: 1.2rem;
   border-radius: 10px;
 }
+
+@media (max-width: 550px) {
+  .background .container {
+    width: 60%;
+  }
+
+  .background .container .btnArea {
+    width: 12.3rem;
+  }
+
+  .background .container .btnArea .btn {
+    width: 12.3rem;
+    font-size: 0.9rem;
+  }
+}
