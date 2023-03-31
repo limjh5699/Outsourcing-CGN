@@ -1,10 +1,12 @@
-import styles from "./secondSection.module.css";
-
 import Marquee from "react-fast-marquee";
+
+import styles from "./secondSection.module.css";
 
 import useScrollFadeIn from "../../../../hooks/useScrollFadeIn";
 
 const SecondSection = () => {
+  console.log(window.innerWidth);
+
   const animatedItem = {
     0: useScrollFadeIn({ direction: "up", duration: 1, delay: 0 }),
     1: useScrollFadeIn({ direction: "up", duration: 1, delay: 0 }),
@@ -24,7 +26,8 @@ const SecondSection = () => {
         </div>
         <div {...animatedItem[1]}>
           <p className={styles.text2}>
-            Contents는 Cloud에서 Care은 Community 에서
+            Contents는 Cloud에서 {window.innerWidth <= 530 ? <br /> : ""} Care은
+            Community 에서
           </p>
         </div>
         <div {...animatedItem[2]}>

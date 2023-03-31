@@ -8,8 +8,8 @@ const MainPage = () => {
   return (
     <div>
       <FirstSection />
-      {/* <SecondSection />
-      <ThirdSection />
+      <SecondSection />
+      {/* <ThirdSection />
       <FourthSection />
       <FifthSection /> */}
     </div>
