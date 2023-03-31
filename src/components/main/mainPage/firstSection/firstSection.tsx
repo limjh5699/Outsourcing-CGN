@@ -12,6 +12,7 @@ const FirstSection = () => {
 
   return (
     <div className={styles.background}>
+      <div className={styles.ractangle}></div>
       {modalOpen && <Modal setModalOpen={setModalOpen} modalRef={modalRef} />}
       <div className={styles.content}>
         <img src={title} alt="title" className={styles.img} />

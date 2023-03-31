@@ -7,12 +7,22 @@
   align-items: center;
 }
 
+.background .ractangle {
+  width: 40vh;
+  height: 40vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url("../../../../assets/mainPage/rectangle.png") no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
 .background .content {
   position: absolute;
   display: flex;
   flex-direction: column;
   margin-left: 14rem;
-  margin-top: 3rem;
 }
 
 .background .content .img {
@@ -44,4 +54,150 @@
   cursor: pointer;
   border-radius: 13px;
   margin-top: 2.3rem;
+}
+
+@media (max-width: 1445px) {
+  .background .content {
+    margin-left: 11rem;
+  }
+
+  .background .content .img {
+    height: 7rem;
+  }
+}
+
+@media (max-width: 1384px) {
+  .background .content {
+    margin-left: 8rem;
+  }
+}
+
+@media (max-width: 1210px) {
+  .background .content {
+    margin-left: 4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .background {
+    background: url("../../../../assets/mainPage/background_mobile.png")
+      no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .background .ractangle {
+    display: block;
+  }
+
+  .background .content {
+    margin-bottom: 10vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .background .content {
+    margin-left: 2rem;
+  }
+
+  .background .content .img {
+    height: 6rem;
+  }
+
+  .background .content .info {
+    margin-top: 4rem;
+  }
+
+  .background .content .info h1 {
+    font-size: 2.5rem;
+  }
+
+  .background .content .info h3 {
+    font-size: 1.5rem;
+  }
+
+  .background .content .btn {
+    width: 17rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .background .content {
+    margin-left: 2rem;
+  }
+
+  .background .content .img {
+    height: 5rem;
+  }
+
+  .background .content .info {
+    margin-top: 4rem;
+  }
+
+  .background .content .info h1 {
+    font-size: 2.3rem;
+  }
+
+  .background .content .info h3 {
+    font-size: 1.3rem;
+  }
+
+  .background .content .btn {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .background .content .img {
+    height: 4rem;
+  }
+
+  .background .content .info {
+    margin-top: 3rem;
+  }
+
+  .background .content .info h1 {
+    font-size: 2rem;
+  }
+
+  .background .content .info h3 {
+    font-size: 1rem;
+  }
+
+  .background .content .btn {
+    width: 12rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .background .content {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 355px) {
+  .background .content .img {
+    height: 3rem;
+  }
+
+  .background .content .info {
+    margin-top: 2rem;
+  }
+
+  .background .content .info h1 {
+    font-size: 1.5rem;
+  }
+
+  .background .content .info h3 {
+    font-size: 0.8rem;
+  }
+
+  .background .content .btn {
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.3rem;
+  }
 }
