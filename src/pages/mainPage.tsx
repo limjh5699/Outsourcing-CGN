@@ -9,8 +9,8 @@ const MainPage = () => {
     <div>
       <FirstSection />
       <SecondSection />
-      {/* <ThirdSection />
-      <FourthSection />
+      <ThirdSection />
+      {/* <FourthSection />
       <FifthSection /> */}
     </div>
   );

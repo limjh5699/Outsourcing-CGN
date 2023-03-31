@@ -17,6 +17,7 @@
 }
 
 .background .contents {
+  width: 70vw;
   height: 50rem;
   display: flex;
   flex-direction: column;
@@ -33,6 +34,16 @@
   font-size: 1rem;
   font-weight: 400;
   color: #fff;
+}
+
+.background .contents .cards .swiper {
+  width: 70vw;
+  background-color: #c3c3c361;
+  display: none;
+}
+
+.background .contents .cards {
+  margin: 0 auto;
 }
 
 .background .contents .cards .card {
@@ -69,4 +80,45 @@
   font-weight: 400;
   font-size: 1rem;
   margin-top: 1rem;
+}
+
+@media (max-width: 1885px) {
+  .background .contents .cards .card {
+    display: none;
+  }
+  .background .contents .cards .swiper {
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  .background {
+    height: 50rem;
+  }
+
+  .background .contents {
+    height: 38rem;
+  }
+
+  .background .contents .text .title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .background .contents .text .subTitle {
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+@media (max-width: 380px) {
+  .background {
+    height: 45rem;
+  }
+
+  .background .contents {
+    height: 32rem;
+  }
 }

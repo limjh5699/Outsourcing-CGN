@@ -6,6 +6,7 @@ import human3 from "../../../../assets/mainPage/human3.png";
 import human4 from "../../../../assets/mainPage/human4.png";
 
 import useScrollFadeIn from "../../../../hooks/useScrollFadeIn";
+import ThirdSwiper from "./Swiper/swiper";
 
 const ThirdSection = () => {
   const animatedItem = {
@@ -23,6 +24,9 @@ const ThirdSection = () => {
           </p>
         </div>
         <div className={styles.cards} {...animatedItem[0]}>
+          <div className={styles.swiper}>
+            <ThirdSwiper />
+          </div>
           <div className={styles.card}>
             <img className={styles.img} src={human1} alt={"이재훈"} />
             <div className={styles.info}>

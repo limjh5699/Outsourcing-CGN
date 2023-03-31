@@ -1,0 +1,59 @@
+.slider {
+  width: 19.2rem;
+}
+.card {
+  width: 19.2rem;
+  height: 31rem;
+  margin: 0.7rem;
+  background-color: #000;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.card .img {
+  width: 100%;
+}
+
+.card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .info .title {
+  margin-top: 2.6rem;
+  color: #5ae676;
+  text-align: center;
+}
+
+.card .info .name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.card .info .company {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 380px) {
+  .card {
+    height: 25rem;
+  }
+  .card .info .title {
+    font-size: 1.5rem;
+  }
+
+  .card .info .name {
+    font-size: 1rem;
+  }
+
+  .card .info .company {
+    font-size: 0.8rem;
+  }
+}
