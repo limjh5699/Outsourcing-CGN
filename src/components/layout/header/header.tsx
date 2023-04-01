@@ -37,22 +37,34 @@ const Header = () => {
         <img src={logo} alt="logo" className={styles.logo} />
         <ul className={openBar === false ? styles.nav : styles.openNav}>
           <li>
-            <Link to={"/"}>행사소개</Link>
+            <Link to={"/"} onClick={() => setOpenBar(false)}>
+              행사소개
+            </Link>
           </li>
           <li>
-            <Link to={"/regist"}>참가 신청</Link>
+            <Link to={"/regist"} onClick={() => setOpenBar(false)}>
+              참가 신청
+            </Link>
           </li>
           <li>
-            <Link to={"/time"}>타임 테이블</Link>
+            <Link to={"/time"} onClick={() => setOpenBar(false)}>
+              타임 테이블
+            </Link>
           </li>
           <li>
-            <Link to={"/FAQ"}>자주 묻는 질문</Link>
+            <Link to={"/FAQ"} onClick={() => setOpenBar(false)}>
+              자주 묻는 질문
+            </Link>
           </li>
           <li>
-            <Link to={"/place"}>행사장</Link>
+            <Link to={"/place"} onClick={() => setOpenBar(false)}>
+              행사장
+            </Link>
           </li>
           <li>
-            <Link to={"/event"}>이벤트</Link>
+            <Link to={"/event"} onClick={() => setOpenBar(false)}>
+              이벤트
+            </Link>
           </li>
         </ul>
         <FontAwesomeIcon
