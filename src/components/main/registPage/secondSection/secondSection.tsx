@@ -11,7 +11,7 @@ const SecondSection = () => {
   const onScrollFn = useMemo(
     () =>
       throttle(() => {
-        if (window.scrollY > 110) {
+        if (window.scrollY > 240) {
           setScrollEvent(true);
         } else {
           setScrollEvent(false);
