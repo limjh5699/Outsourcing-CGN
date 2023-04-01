@@ -11,7 +11,7 @@ const MainPage = () => {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
-      {/* <FifthSection /> */}
+      <FifthSection />
     </div>
   );
 };

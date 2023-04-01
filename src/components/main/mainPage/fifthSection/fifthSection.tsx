@@ -34,10 +34,10 @@ const FifthSection = () => {
   return (
     <div className={styles.background}>
       <span>FMC 2023</span>
+      <div className={styles.text}>
+        <h1 className={styles.title}>찾아 오시는 길</h1>
+      </div>
       <div className={styles.contents}>
-        <div className={styles.text}>
-          <h1 className={styles.title}>찾아 오시는 길</h1>
-        </div>
         <div className={styles.mapArea}>
           <div {...animatedItem[0]}>
             <p>서울 서초구 바우뫼르 12길 70 더케이호텔서울 그랜드볼룸홀</p>

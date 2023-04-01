@@ -2,8 +2,8 @@
   height: 105rem;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: #011633;
 }
 
@@ -17,24 +17,29 @@
 }
 
 .background .contents {
-  height: 89rem;
-  width: 80rem;
+  height: 80rem;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.background .contents .text .title {
+.background .text {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.background .text .title {
   font-size: 3.8rem;
   font-weight: 800;
   color: #fff;
 }
 
 .background .contents .mapArea {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  width: 60vw;
+  height: 60vw;
+  margin: 0 auto;
 }
 
 .background .contents .mapArea p {
@@ -44,9 +49,15 @@
 }
 
 .background .contents .mapArea .map {
+  margin: 0 auto;
   margin-top: 3.5rem;
   width: 100%;
-  height: 40rem;
+  height: 80%;
+}
+
+.background .contents .traffic {
+  width: 60vw;
+  margin: 0 auto;
 }
 
 .background .contents .traffic h2,
@@ -91,4 +102,68 @@
 
 .background .contents .traffic .parking p {
   margin-top: 1rem;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .background {
+    height: 100rem;
+  }
+
+  .background .contents .traffic .bus .container .two {
+    margin-left: 3rem;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .background {
+    height: 90rem;
+  }
+
+  .background .text .title {
+    font-size: 3rem;
+  }
+
+  .background .contents {
+    height: 70rem;
+  }
+
+  .background .contents .mapArea p {
+    font-size: 1.5rem;
+  }
+
+  .background .contents .traffic p,
+  .background .contents .traffic li {
+    font-size: 0.8rem;
+  }
+
+  .background .contents .traffic .bus .container .two {
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .background {
+    height: 90rem;
+  }
+
+  .background .text .title {
+    font-size: 2.5rem;
+  }
+
+  .background .contents {
+    height: 65rem;
+  }
+
+  .background .contents .mapArea p {
+    font-size: 1rem;
+  }
+
+  .background .contents .traffic p,
+  .background .contents .traffic li {
+    font-size: 0.6rem;
+  }
+
+  .background .contents .traffic .bus .container .two {
+    margin-left: 0;
+  }
 }
