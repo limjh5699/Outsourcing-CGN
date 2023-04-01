@@ -5,10 +5,10 @@ const FourthSection = () => {
     <section className={styles.background} id="fourthSection">
       <div className={styles.contents}>
         <div className={styles.top}>
-          <p className={styles.title}>[무료3] 산학 하는 요즘 애들 모여라!</p>
+          <p className={styles.title}>[무료3] 신학 하는 요즘 애들 모여라!</p>
         </div>
         <div className={styles.mid}>
-          <h1>산학생 인증하기</h1>
+          <h1>신학생 인증하기</h1>
           <p>
             한국교회와 미래세대 목회자 섬김의 의미로 신학교를 다니는 신학생들을
             <br />

@@ -7,11 +7,11 @@ import ThirdSection from "../components/main/mainPage/thirdSection/thirdSection"
 const MainPage = () => {
   return (
     <div>
-      <FirstSection />
+      {/* <FirstSection /> */}
       <SecondSection />
       <ThirdSection />
-      {/* <FourthSection />
-      <FifthSection /> */}
+      <FourthSection />
+      {/* <FifthSection /> */}
     </div>
   );
 };

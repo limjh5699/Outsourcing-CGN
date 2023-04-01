@@ -41,19 +41,39 @@
   margin-top: 1rem;
 }
 
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  /*스타일입력*/
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width: 480px) and (max-width: 767px) {
+  /*스타일입력*/
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+@media all and (max-width: 479px) {
+  /*스타일입력*/
+}
+
 @media (max-width: 380px) {
   .card {
     height: 25rem;
   }
   .card .info .title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .card .info .name {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .card .info .company {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .card {
+    height: 22rem;
   }
 }

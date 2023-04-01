@@ -27,6 +27,7 @@ const ThirdSwiper = () => {
       breakpoints={{
         930: {
           slidesPerView: 2,
+          spaceBetween: 0,
         },
         1800: {
           slidesPerView: 3,

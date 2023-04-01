@@ -55,45 +55,7 @@
   background-color: #000;
 }
 
-@media (max-width: 1240px) {
-  .middle .text1 {
-    font-size: 2.5rem;
-  }
-
-  .middle .text2 {
-    font-size: 3.1rem;
-  }
-
-  .middle .text3 {
-    font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 1100px) {
-  .middle .text1 {
-    font-size: 2.2rem;
-  }
-
-  .middle .text2 {
-    font-size: 2.8rem;
-  }
-}
-
-@media (max-width: 960px) {
-  .middle .text1 {
-    font-size: 1.9rem;
-  }
-
-  .middle .text2 {
-    font-size: 2.5rem;
-  }
-
-  .middle .text3 {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 860px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
   .middle .text1 {
     font-size: 1.6rem;
   }
@@ -103,78 +65,34 @@
   }
 
   .middle .text3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
-@media (max-width: 760px) {
-  .middle {
-    height: 25rem;
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .middle .text1 {
+    font-size: 1.2rem;
   }
 
-  .middle .text1 {
+  .middle .text2 {
     font-size: 1.4rem;
   }
 
-  .middle .text2 {
-    font-size: 2rem;
-  }
-
   .middle .text3 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 
-@media (max-width: 660px) {
+@media all and (max-width: 479px) {
   .middle .text1 {
-    font-size: 1.2rem;
-  }
-
-  .middle .text2 {
-    font-size: 1.8rem;
-  }
-
-  .middle .text3 {
     font-size: 1rem;
   }
-}
 
-@media (max-width: 600px) {
   .middle .text2 {
     font-size: 1.5rem;
   }
-}
-
-@media (max-width: 460px) {
-  .middle .text1 {
-    font-size: 1.1rem;
-  }
 
   .middle .text3 {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 460px) {
-  .middle {
-    height: 20rem;
-  }
-
-  .middle .text1 {
-    font-size: 1.1rem;
-  }
-
-  .middle .text3 {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 340px) {
-  .middle .text1 {
-    font-size: 1rem;
-  }
-
-  .middle .text3 {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 }

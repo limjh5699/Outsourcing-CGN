@@ -16,13 +16,13 @@ const ThirdSection = () => {
   return (
     <div className={styles.background}>
       <span>FMC 2023</span>
+      <div className={styles.text}>
+        <h1 className={styles.title}>메인강사</h1>
+        <p className={styles.subTitle}>
+          다양한 분야의 전문가들의 경험과 노하우를 확인해 보세요.
+        </p>
+      </div>
       <div className={styles.contents}>
-        <div className={styles.text}>
-          <h1 className={styles.title}>메인강사</h1>
-          <p className={styles.subTitle}>
-            다양한 분야의 전문가들의 경험과 노하우를 확인해 보세요.
-          </p>
-        </div>
         <div className={styles.cards} {...animatedItem[0]}>
           <div className={styles.swiper}>
             <ThirdSwiper />

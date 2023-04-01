@@ -17,13 +17,13 @@ const FourthSection = () => {
   return (
     <div className={styles.background}>
       <span>FMC 2023</span>
+      <div className={styles.text}>
+        <h1 className={styles.title}>이벤트</h1>
+        <p className={styles.subTitle}>
+          이벤트에 참여하시고 푸짐한 선물도 받아가세요
+        </p>
+      </div>
       <div className={styles.contents}>
-        <div className={styles.text}>
-          <h1 className={styles.title}>이벤트</h1>
-          <p className={styles.subTitle}>
-            이벤트에 참여하시고 푸짐한 선물도 받아가세요
-          </p>
-        </div>
         <div className={styles.container}>
           <div className={styles.top} {...animatedItem[0]}>
             <img src={balloon} alt="balloon" />
