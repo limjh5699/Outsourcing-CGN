@@ -8,10 +8,10 @@ const RegistPage = () => {
   return (
     <div>
       <FirstSection />
-      <SecondSection />
+      {/* <SecondSection />
       <ThirdSection />
       <FourthSection />
-      <FifthSection />
+      <FifthSection /> */}
     </div>
   );
 };

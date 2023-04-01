@@ -1,34 +1,36 @@
 .background {
-  height: 100vh;
+  height: 60rem;
   background: url("../../../../assets/registPage/background.png") no-repeat;
   background-size: 100% 100%;
-}
-
-.background .size {
-  width: 67vw;
-  margin: 0 auto;
   padding-top: 15vh;
-}
-
-.background .size .contents {
-  margin-top: 6rem;
   display: flex;
   flex-direction: column;
 }
 
-.background .size h1 {
+.background .title {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.background .title h1 {
   color: #fff;
   font-size: 3.5rem;
 }
 
-.background .size .contents h2 {
+.background .contents {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.background .contents h2 {
   color: #5ae676;
   font-size: 3.3rem;
   font-weight: 700;
   text-align: center;
 }
 
-.background .size .contents .day {
+.background .contents .day {
   margin-top: 2rem;
   color: #fff;
   font-size: 2rem;
@@ -36,7 +38,7 @@
   text-align: center;
 }
 
-.background .size .contents .box {
+.background .contents .box {
   height: 18rem;
   border-radius: 40px;
   margin: 2rem auto 0 auto;
@@ -46,28 +48,151 @@
   align-items: center;
 }
 
-.background .size .contents .box .dashes {
+.background .contents .box .dashes {
   height: 10rem;
   border: 0.1rem dashed #000;
 }
 
-.background .size .contents .box .price {
+.background .contents .box .price {
   margin-top: 1.5rem;
 }
 
-.background .size .contents .box p {
+.background .contents .box p {
   color: #000;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 600;
 }
 
-.background .size .contents .box .box1,
-.background .size .contents .box .box2,
-.background .size .contents .box .box3 {
+.background .contents .box .box1,
+.background .contents .box .box2,
+.background .contents .box .box3 {
   margin: 0 3rem;
 }
 
-.background .size .contents .box .box3 p {
+.background .contents .box .box3 p {
   font-weight: 900;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .background .title h1 {
+    font-size: 3rem;
+  }
+
+  .background .contents h2 {
+    font-size: 2.2rem;
+  }
+
+  .background .contents .day {
+    font-size: 1.4rem;
+  }
+
+  .background .contents .box {
+    height: 14rem;
+    margin: 5rem auto 0 auto;
+  }
+
+  .background .contents .box .dashes {
+    height: 8rem;
+    border: 0.1rem dashed #000;
+  }
+
+  .background .contents .box .price {
+    margin-top: 1.5rem;
+  }
+
+  .background .contents .box p {
+    color: #000;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .background .contents .box .box1,
+  .background .contents .box .box2,
+  .background .contents .box .box3 {
+    margin: 0 2rem;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .background .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .background .contents h2 {
+    font-size: 1.8rem;
+  }
+
+  .background .contents .day {
+    font-size: 1.1rem;
+  }
+
+  .background .contents .box {
+    height: 11rem;
+    margin: 5rem auto 0 auto;
+  }
+
+  .background .contents .box .dashes {
+    height: 6rem;
+    border: 0.1rem dashed #000;
+  }
+
+  .background .contents .box .price {
+    margin-top: 1.5rem;
+  }
+
+  .background .contents .box p {
+    color: #000;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .background .contents .box .box1,
+  .background .contents .box .box2,
+  .background .contents .box .box3 {
+    margin: 0 1rem;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .background .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .background .contents h2 {
+    font-size: 1.2rem;
+  }
+
+  .background .contents .day {
+    font-size: 0.8rem;
+  }
+
+  .background .contents .box {
+    height: 9.5rem;
+    margin: 5rem auto 0 auto;
+  }
+
+  .background .contents .box .dashes {
+    height: 5rem;
+    border: 0.1rem dashed #000;
+  }
+
+  .background .contents .box .price {
+    margin-top: 1.5rem;
+  }
+
+  .background .contents .box p {
+    color: #000;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .background .contents .box .box1,
+  .background .contents .box .box2,
+  .background .contents .box .box3 {
+    margin: 0 1rem;
+  }
 }
