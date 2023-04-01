@@ -11,7 +11,7 @@ const RegistPage = () => {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
-      {/* <FifthSection /> */}
+      <FifthSection />
     </div>
   );
 };
