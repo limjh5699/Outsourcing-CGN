@@ -3,8 +3,10 @@ import styles from "./timeTable.module.css";
 const TimeTable = () => {
   return (
     <div className={styles.background}>
+      <div className={styles.title}>
+        <h1>타임 테이블</h1>
+      </div>
       <div className={styles.contents}>
-        <h1 className={styles.title}>타임 테이블</h1>
         <table>
           <tbody>
             <tr>

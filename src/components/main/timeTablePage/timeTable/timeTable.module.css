@@ -1,24 +1,33 @@
 .background {
-  height: 118rem;
+  height: 100rem;
+  padding-top: 6rem;
   background-color: #001633;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background .title {
+  position: absolute;
+  width: 70vw;
+  margin: 0 auto;
+  top: 9rem;
+}
+
+.background .title h1 {
+  color: #fff;
+  font-size: 3.5rem;
 }
 
 .background .contents {
-  width: 67vw;
+  width: 70vw;
   margin: 10.3rem auto 0 auto;
-}
-
-.background .contents h1 {
-  color: #fff;
-  font-size: 3.5rem;
 }
 
 .background .contents table {
   width: 100%;
   border-top: 1px solid #696b6f;
   border-collapse: collapse;
-  margin-top: 8rem;
 }
 
 .background .contents td {
@@ -29,6 +38,65 @@
   font-size: 1.2rem;
 }
 
+.background .contents tr td:first-child {
+  text-align: center;
+}
+
 .background .contents td:nth-child(2) {
   font-size: 1rem;
+  text-align: center;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .background .contents td:nth-child(2) {
+    width: 18%;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .background .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .background .contents td:nth-child(2) {
+    width: 20%;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .background .title h1 {
+    font-size: 2rem;
+  }
+
+  .background .contents td:nth-child(2) {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1445px) {
+  .background .contents,
+  .background .title {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 1384px) {
+  .background .contents,
+  .background .title {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1210px) {
+  .background .contents,
+  .background .title {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 1080px) {
+  .background .contents,
+  .background .title {
+    width: 90vw;
+  }
 }
