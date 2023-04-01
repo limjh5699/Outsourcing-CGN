@@ -10,22 +10,29 @@ const FourthSection = () => {
         <div className={styles.mid}>
           <h1>신학생 인증하기</h1>
           <p>
-            한국교회와 미래세대 목회자 섬김의 의미로 신학교를 다니는 신학생들을
-            <br />
+            한국교회와 미래세대 목회자 섬김의 의미로 신학교를{" "}
+            {window.innerWidth <= 767 ? <br /> : ""} 다니는 신학생들을
+            {window.innerWidth > 767 ? <br /> : ""}
             [FMC 2023]에 무료로 초청합니다
           </p>
           <table>
             <tbody>
               <tr>
-                <td width={"23%"}>가입 대상</td>
+                <td width={window.innerWidth <= 767 ? "28%" : "23%"}>
+                  가입 대상
+                </td>
                 <td>국내/외 신학교를 재학중인 대학생</td>
               </tr>
               <tr>
-                <td width={"23%"}>가입 기간</td>
+                <td width={window.innerWidth <= 767 ? "28%" : "23%"}>
+                  가입 기간
+                </td>
                 <td>2023년 4월 1일 ~ 5월 21일</td>
               </tr>
               <tr>
-                <td width={"23%"}>가입 방법</td>
+                <td width={window.innerWidth <= 767 ? "28%" : "23%"}>
+                  가입 방법
+                </td>
                 <td>퐁당 미디어 콘퍼런스 카카오채널로 학생증 인증</td>
               </tr>
             </tbody>

@@ -1,6 +1,6 @@
 .background {
   position: relative;
-  height: 100vh;
+  height: 60rem;
   background-color: #011633;
   display: flex;
   align-items: center;
@@ -40,7 +40,8 @@
 }
 
 .background .contents .mid table {
-  width: 100%;
+  width: 45rem;
+  margin: 0 auto;
   margin-top: 3rem;
   border-top: 1px solid #fff;
   border-collapse: collapse;
@@ -80,4 +81,110 @@
 
 .vertical {
   border: 1px solid #fff;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .background {
+    height: 100vh;
+  }
+
+  .background .box,
+  .background .selectedBox {
+    padding: 0 3rem;
+  }
+
+  .background .scrollTopBar p,
+  .background .topBar p {
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .background {
+    height: 100vh;
+  }
+
+  .background .chatBox {
+    font-size: 1rem;
+    width: 12.8rem;
+  }
+
+  .background .box,
+  .background .selectedBox {
+    padding: 0 1rem;
+  }
+
+  .background .scrollTopBar p,
+  .background .topBar p {
+    font-size: 1rem;
+  }
+
+  .background .contents .mid h1 {
+    font-size: 2rem;
+  }
+
+  .background .contents .mid p {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .background .contents .mid table {
+    width: 25rem;
+  }
+
+  .background .contents .mid tr td {
+    padding: 1.5rem 1.3rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .background {
+    height: 100vh;
+  }
+
+  .background .chatBox {
+    font-size: 1rem;
+    width: 12.8rem;
+  }
+
+  .background .box,
+  .background .selectedBox {
+    padding: 0 0.2rem;
+  }
+
+  .background .scrollTopBar p,
+  .background .topBar p {
+    font-size: 1rem;
+  }
+
+  .background .contents .mid h1 {
+    font-size: 1.5rem;
+  }
+
+  .background .contents .mid p {
+    font-size: 1rem;
+  }
+
+  .background .contents .mid table {
+    width: 20rem;
+  }
+
+  .background .contents .mid tr td {
+    padding: 1rem 0.7rem;
+    font-size: 0.7rem;
+    color: #fff;
+  }
+
+  .background .contents .mid tr td:first-child {
+    text-align: center;
+    border-right: 1px solid #fff;
+  }
+
+  .background .contents .bottom button {
+    font-size: 1rem;
+    width: 18rem;
+    height: 4rem;
+  }
 }
