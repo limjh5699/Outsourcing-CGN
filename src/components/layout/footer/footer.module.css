@@ -15,11 +15,16 @@
   display: flex;
 }
 
+.background .size .contents img {
+  height: 100%;
+}
+
 .background .size .contents .container {
+  display: flex;
   margin-left: 5rem;
 }
 
-.background .size .contents .container span {
+.background .size .contents .container p {
   color: #fff;
   line-height: 2.5rem;
   font-size: 1.3rem;
@@ -49,6 +54,68 @@
   font-size: 2rem;
   line-height: 6.5rem;
   margin-left: 3rem;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media all and (min-width: 576px) and (max-width: 767px) {
+  .background .size .contents .container {
+    margin-left: 2rem;
+  }
+
+  .background .size .contents .container p {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+  }
+
+  .background .sponsor span {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 575px) {
+  .background .size .contents img {
+    height: 2rem;
+    margin: auto 0;
+  }
+
+  .background .size .contents .container {
+    margin-left: 1.2rem;
+  }
+
+  .background .size .contents .container p {
+    font-size: 1.1rem;
+    margin: 0 0.8rem;
+  }
+
+  .background .sponsor span {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .background .size .contents img {
+    height: 1.5rem;
+    margin: auto 0;
+  }
+
+  .background .size .contents .container {
+    margin-left: 1rem;
+  }
+
+  .background .size .contents .container p {
+    font-size: 0.8rem;
+    margin: 0 0.8rem;
+  }
+
+  .background .size .secContents span {
+    font-size: 0.7rem;
+  }
+
+  .background .sponsor span {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 1445px) {

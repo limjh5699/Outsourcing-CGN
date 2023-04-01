@@ -9,15 +9,16 @@ const Footer = () => {
         <div className={styles.contents}>
           <img src={logo} alt="logo" />
           <div className={styles.container}>
-            <span>개인정보 처리방침</span>
-            <span>퐁당 소개</span>
+            <p>개인정보 처리방침</p>
+            <p>퐁당 소개</p>
           </div>
         </div>
         <div className={styles.secContents}>
           <span>
             재단법인 온누리선교재단 <br />
-            사업자 등록번호: 106-82-11892 | 이사장: 이재훈 | 주소: 서울특별시
-            용산구 서빙고로 59길 8 | 대표 번호: 02-792-0691 <br />
+            사업자 등록번호: 106-82-11892 | 이사장: 이재훈{" "}
+            {window.innerWidth <= 767 ? <br /> : "|"} 주소: 서울특별시 용산구
+            서빙고로 59길 8 | 대표 번호: 02-792-0691 <br />
             CopyrightⓒCGN. All right reserved.
           </span>
         </div>
