@@ -11,7 +11,9 @@ const ThirdSection = () => {
           <h1>개인 참가자 신청하기</h1>
           <p>
             [FMC 2023]은 개인별로도 참가하실 수 있습니다 <br /> 단, 출석교회를
-            퐁당 네트워크 교회로 가입시키면 무료로 참여하실 수 있습니다
+            퐁당 네트워크 교회로 가입시키면
+            {window.innerWidth <= 767 ? <br /> : ""}
+            무료로 참여하실 수 있습니다
           </p>
           <div className={styles.container}>
             <div className={styles.box}>

@@ -47,11 +47,10 @@
 }
 
 .background .contents .mid .container .box {
-  width: 8rem;
-  height: 11rem;
+  width: 13rem;
+  height: 15rem;
   border-radius: 15px;
   background-color: #6045e4;
-  padding: 2rem;
   color: #fff;
   text-align: center;
   font-size: 1.3rem;
@@ -76,7 +75,6 @@
   color: #000;
   background-color: #fff;
   margin: 0 auto;
-  margin-top: 1rem;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -103,4 +101,76 @@
   border-radius: 10px;
   box-shadow: 0 15px 3px #00000025;
   background-color: #000;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .background .contents .mid h1 {
+    font-size: 2rem;
+  }
+
+  .background .contents .mid p {
+    font-size: 1rem;
+  }
+
+  .background .contents .mid .container {
+    width: 30rem;
+  }
+
+  .background .contents .mid .container .box {
+    width: 8rem;
+    height: 10rem;
+    font-size: 1rem;
+  }
+
+  .background .contents .mid .container .box p {
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+  }
+
+  .background .contents .mid .container .box div {
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .background .contents .mid h1 {
+    font-size: 2rem;
+  }
+
+  .background .contents .mid p {
+    font-size: 1rem;
+  }
+
+  .background .contents .mid .container {
+    width: 22rem;
+    justify-content: space-between;
+  }
+
+  .background .contents .mid .container .box {
+    width: 7rem;
+    height: 9rem;
+    font-size: 1rem;
+  }
+
+  .background .contents .mid .container .box p {
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+  }
+
+  .background .contents .mid .container .box div {
+    width: 4rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .background .contents .bottom button {
+    font-size: 1rem;
+    width: 18rem;
+    height: 4rem;
+  }
 }

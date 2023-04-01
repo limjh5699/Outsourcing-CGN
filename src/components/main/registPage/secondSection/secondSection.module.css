@@ -190,7 +190,8 @@
   }
 
   .background .contents .mid p {
-    font-size: 1.2rem;
+    margin-top: 2rem;
+    font-size: 1.4rem;
   }
 
   .background .contents .mid tr td {
@@ -220,7 +221,7 @@
   }
 
   .background .contents .mid p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .background .contents .mid tr td {
