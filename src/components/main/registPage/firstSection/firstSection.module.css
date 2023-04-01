@@ -2,14 +2,18 @@
   height: 60rem;
   background: url("../../../../assets/registPage/background.png") no-repeat;
   background-size: 100% 100%;
-  padding-top: 15vh;
+  padding-top: 6rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .background .title {
+  position: absolute;
   width: 70vw;
   margin: 0 auto;
+  top: calc(3rem + 6rem);
 }
 
 .background .title h1 {
@@ -18,7 +22,6 @@
 }
 
 .background .contents {
-  margin-top: 10rem;
   display: flex;
   flex-direction: column;
 }
@@ -121,16 +124,17 @@
   }
 
   .background .contents h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .background .contents .day {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   .background .contents .box {
     height: 11rem;
-    margin: 5rem auto 0 auto;
+    margin: 3rem auto 0 auto;
+    border-radius: 20px;
   }
 
   .background .contents .box .dashes {
@@ -145,7 +149,7 @@
   .background .contents .box p {
     color: #000;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
   }
 
@@ -162,16 +166,17 @@
   }
 
   .background .contents h2 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .background .contents .day {
-    font-size: 0.8rem;
+    font-size: 1.3rem;
   }
 
   .background .contents .box {
     height: 9.5rem;
-    margin: 5rem auto 0 auto;
+    margin: 3rem auto 0 auto;
+    border-radius: 20px;
   }
 
   .background .contents .box .dashes {
@@ -194,5 +199,29 @@
   .background .contents .box .box2,
   .background .contents .box .box3 {
     margin: 0 1rem;
+  }
+}
+
+@media (max-width: 1445px) {
+  .background .title {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 1384px) {
+  .background .title {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1210px) {
+  .background .title {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 1080px) {
+  .background .title {
+    width: 90vw;
   }
 }

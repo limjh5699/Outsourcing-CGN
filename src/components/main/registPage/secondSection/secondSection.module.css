@@ -173,6 +173,7 @@
 @media all and (min-width: 480px) and (max-width: 767px) {
   .background .chatBox {
     font-size: 1rem;
+    width: 12.8rem;
   }
 
   .background .box,
@@ -204,6 +205,7 @@
 @media all and (max-width: 479px) {
   .background .chatBox {
     font-size: 1rem;
+    width: 12.8rem;
   }
 
   .background .box,

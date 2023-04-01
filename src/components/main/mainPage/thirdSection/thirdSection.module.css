@@ -18,7 +18,7 @@
 }
 
 .background .text {
-  width: 80vw;
+  width: 70vw;
 }
 
 .background .text .title {
@@ -113,5 +113,29 @@
 
   .background .text .subTitle {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1445px) {
+  .background .text {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 1384px) {
+  .background .text {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1210px) {
+  .background .text {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 1080px) {
+  .background .text {
+    width: 90vw;
   }
 }
