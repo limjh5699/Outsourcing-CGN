@@ -2,18 +2,24 @@
   min-height: 60rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #fff;
   padding-bottom: 20rem;
 }
 
-.background .contents {
-  margin: 10.3rem auto 0 auto;
-  width: 67vw;
+.background .title {
+  position: absolute;
+  width: 70vw;
+  top: 9rem;
 }
 
-.background .contents h1 {
+.background .title h1 {
   font-size: 3.5rem;
-  font-weight: 800;
+}
+
+.background .contents {
+  margin: 10.3rem auto 0 auto;
+  width: 70vw;
 }
 
 .background .contents .topBar {
@@ -24,7 +30,7 @@
 
 .background .contents .topBar button {
   font-size: 1.5rem;
-  width: 17rem;
+  width: 22%;
   height: 3rem;
   border: 1px solid #6045e4;
   border-radius: 5px;
@@ -55,18 +61,19 @@
   font-weight: 700;
 }
 
-.background .contents .faq .container .table .title {
-  width: 15%;
+.background .contents .faq .container .table .tableTitle {
+  width: 13%;
   padding: 1.3rem;
   text-align: center;
 }
 
-.background .contents .faq .container .table .subTitle {
-  width: 75%;
+.background .contents .faq .container .table .tableSubTitle {
+  width: 72%;
   padding: 1.3rem 0;
 }
 
 .background .contents .faq .container .table .icon {
+  width: 15%;
   padding: 1.3rem 0;
 }
 
@@ -78,8 +85,83 @@
 .background .contents .faq .container .contentSection pre {
   padding: 0.5rem 10.6vw;
   line-height: 2rem;
+  white-space: pre-wrap;
 }
 
 .background .contents .faq .container .close {
   display: none;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .background .contents .topBar button {
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .background .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .background .contents .topBar button {
+    font-size: 0.7rem;
+  }
+
+  .background .contents .faq .container .table .tableTitle {
+    width: 18%;
+    font-size: 1rem;
+  }
+
+  .background .contents .faq .container .table .tableSubTitle {
+    width: 67%;
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .background .title h1 {
+    font-size: 2rem;
+  }
+
+  .background .contents .topBar button {
+    font-size: 0.5rem;
+  }
+
+  .background .contents .faq .container .table .tableTitle {
+    width: 23%;
+    font-size: 1rem;
+  }
+
+  .background .contents .faq .container .table .tableSubTitle {
+    width: 62%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1445px) {
+  .background .contents,
+  .background .title {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 1384px) {
+  .background .contents,
+  .background .title {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1210px) {
+  .background .contents,
+  .background .title {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 1080px) {
+  .background .contents,
+  .background .title {
+    width: 90vw;
+  }
 }

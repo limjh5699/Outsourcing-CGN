@@ -64,8 +64,10 @@ const FAQ = () => {
 
   return (
     <div className={styles.background}>
-      <div className={styles.contents}>
+      <div className={styles.title}>
         <h1>자주 묻는 질문</h1>
+      </div>
+      <div className={styles.contents}>
         <div className={styles.topBar}>
           <button
             className={topActive === 0 ? styles.topActive : null}
@@ -103,8 +105,8 @@ const FAQ = () => {
                     : setIndexActive(index);
                 }}
               >
-                <div className={styles.title}>{data.title}</div>
-                <div className={styles.subTitle}>{data.subTitle}</div>
+                <div className={styles.tableTitle}>{data.title}</div>
+                <div className={styles.tableSubTitle}>{data.subTitle}</div>
                 {indexActive === index ? (
                   <FontAwesomeIcon className={styles.icon} icon={faMinus} />
                 ) : (
