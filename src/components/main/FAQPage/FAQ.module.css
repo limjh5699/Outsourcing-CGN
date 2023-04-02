@@ -96,6 +96,11 @@
   .background .contents .topBar button {
     font-size: 1.2rem;
   }
+
+  .background .contents .faq .container .contentSection pre {
+    padding: 0.5rem 2vw;
+    font-size: 1.2rem;
+  }
 }
 
 @media all and (min-width: 480px) and (max-width: 767px) {
@@ -116,6 +121,11 @@
     width: 67%;
     font-size: 1rem;
   }
+
+  .background .contents .faq .container .contentSection pre {
+    padding: 0.5rem 2vw;
+    font-size: 0.9rem;
+  }
 }
 
 @media all and (max-width: 479px) {
@@ -129,12 +139,17 @@
 
   .background .contents .faq .container .table .tableTitle {
     width: 23%;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .background .contents .faq .container .table .tableSubTitle {
     width: 62%;
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .background .contents .faq .container .contentSection pre {
+    padding: 0.5rem 2vw;
+    font-size: 0.5rem;
   }
 }
 
