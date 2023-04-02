@@ -31,10 +31,16 @@ const PlaceSection = () => {
 
   return (
     <div className={styles.background}>
-      <div className={styles.contents}>
+      <div className={styles.title}>
         <h1>행사장</h1>
+      </div>
+      <div className={styles.contents}>
         <div className={styles.mapArea}>
-          <p>서울 서초구 바우뫼르 12길 70 더케이호텔서울 그랜드볼룸홀</p>
+          <p>
+            서울 서초구 바우뫼르 12길 70{" "}
+            {window.innerWidth <= 1023 ? <br /> : ""} 더케이호텔서울
+            그랜드볼룸홀
+          </p>
           <div id="map" className={styles.map}></div>
         </div>
         <div className={styles.traffic}>
