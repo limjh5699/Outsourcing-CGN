@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import styles from "./thirdSection.module.css";
 
 const ThirdSection = () => {
@@ -24,7 +25,9 @@ const ThirdSection = () => {
                 <br />
                 교회로 가입
               </p>
-              <div>무료</div>
+              <Link to="secondSection">
+                <div>무료</div>
+              </Link>
             </div>
             <div className={styles.box}>
               <p>
@@ -43,7 +46,7 @@ const ThirdSection = () => {
           </div>
         </div>
         <div className={styles.bottom}>
-          <button>퐁당 네트워크 교회 가입 신청서 작성</button>
+          <button>개인 참가자 신청서 작성</button>
         </div>
       </div>
     </section>

@@ -47,6 +47,7 @@
   font-weight: 400;
   color: #5ae676;
   text-align: center;
+  line-height: 3rem;
 }
 
 .bottom {
@@ -55,7 +56,18 @@
   background-color: #000;
 }
 
+.bottom .marquee {
+  height: 100%;
+  color: #6565fa;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
 @media all and (min-width: 768px) and (max-width: 1023px) {
+  .middle {
+    height: 25rem;
+  }
+
   .middle .text1 {
     font-size: 1.6rem;
   }
@@ -67,23 +79,51 @@
   .middle .text3 {
     font-size: 1.1rem;
   }
+
+  .bottom {
+    height: 5rem;
+  }
+
+  .bottom .marquee {
+    font-size: 1.7rem;
+  }
 }
 
 @media all and (min-width: 480px) and (max-width: 767px) {
-  .middle .text1 {
-    font-size: 1.2rem;
+  .middle {
+    height: 25rem;
   }
 
-  .middle .text2 {
+  .middle .text1 {
     font-size: 1.4rem;
   }
 
+  .middle .text2 {
+    font-size: 1.8rem;
+  }
+
   .middle .text3 {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+  }
+
+  .bottom {
+    height: 4.5rem;
+  }
+
+  .bottom .marquee {
+    font-size: 1.5rem;
   }
 }
 
 @media all and (max-width: 479px) {
+  .top span {
+    font-size: 1.5rem;
+  }
+
+  .middle {
+    height: 20rem;
+  }
+
   .middle .text1 {
     font-size: 1rem;
   }
@@ -93,6 +133,15 @@
   }
 
   .middle .text3 {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+
+  .bottom {
+    height: 4rem;
+  }
+
+  .bottom .marquee {
+    font-size: 1.2rem;
   }
 }

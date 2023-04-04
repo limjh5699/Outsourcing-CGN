@@ -7,20 +7,6 @@
   align-items: center;
 }
 
-.background .chatBox {
-  position: absolute;
-  color: #fff;
-  top: -7rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5rem;
-  font-weight: 700;
-  background-color: #6045e4;
-  padding: 1.3rem 2.3rem;
-  border-radius: 30px;
-  animation: chatBox 0.5s linear 0s infinite alternate;
-}
-
 .background .chatBox::after {
   border-color: #6045e4 transparent;
   border-style: solid;
@@ -34,6 +20,7 @@
   width: 0;
   z-index: 1;
 }
+
 .background .scrollTopBar,
 .background .topBar {
   width: 100%;
@@ -147,16 +134,7 @@
 }
 
 .vertical {
-  border: 1px solid #fff;
-}
-
-@keyframes chatBox {
-  0% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: 10px;
-  }
+  border: 0.1rem solid #fff;
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
@@ -247,7 +225,7 @@
 
   .background .scrollTopBar p,
   .background .topBar p {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 
   .background .contents .mid h1 {

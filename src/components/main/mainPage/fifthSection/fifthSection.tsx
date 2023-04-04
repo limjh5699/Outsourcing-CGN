@@ -33,7 +33,6 @@ const FifthSection = () => {
 
   return (
     <div className={styles.background}>
-      <span>FMC 2023</span>
       <div className={styles.text}>
         <h1 className={styles.title}>찾아 오시는 길</h1>
       </div>

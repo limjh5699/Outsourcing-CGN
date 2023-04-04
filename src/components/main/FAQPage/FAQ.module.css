@@ -93,6 +93,14 @@
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
+  .background .title {
+    top: 6rem;
+  }
+
+  .background .contents .topBar {
+    margin-top: 5rem;
+  }
+
   .background .contents .topBar button {
     font-size: 1.2rem;
   }
@@ -104,8 +112,20 @@
 }
 
 @media all and (min-width: 480px) and (max-width: 767px) {
+  .background {
+    padding-bottom: 10rem;
+  }
+
+  .background .title {
+    top: 6rem;
+  }
+
   .background .title h1 {
     font-size: 2.5rem;
+  }
+
+  .background .contents .topBar {
+    margin-top: 3rem;
   }
 
   .background .contents .topBar button {
@@ -129,8 +149,20 @@
 }
 
 @media all and (max-width: 479px) {
+  .background {
+    padding-bottom: 10rem;
+  }
+
+  .background .title {
+    top: 6rem;
+  }
+
   .background .title h1 {
     font-size: 2rem;
+  }
+
+  .background .contents .topBar {
+    margin-top: 1rem;
   }
 
   .background .contents .topBar button {

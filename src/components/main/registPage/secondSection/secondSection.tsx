@@ -8,45 +8,8 @@ const SecondSection = () => {
   const [scrollEvent, setScrollEvent] = useState(false);
   const [viewSection, setViewSection] = useState("firstSection");
 
-  // const onScrollFn = useMemo(
-  //   () =>
-  //     throttle(() => {
-  //       if (window.scrollY > 250) {
-  //         setScrollEvent(true);
-  //       } else {
-  //         setScrollEvent(false);
-  //       }
-  //     }, 0),
-  //   []
-  // );
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", onScrollFn);
-
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry: any) => {
-  //         if (entry.isIntersecting) {
-  //           setViewSection(entry.target.id);
-  //         }
-  //       });
-  //     },
-  //     { threshold: 0.5 }
-  //   );
-
-  //   document.querySelectorAll("section").forEach((section) => {
-  //     observer.observe(section);
-  //   });
-
-  //   return () => {
-  //     window.removeEventListener("scroll", onScrollFn);
-  //     observer.disconnect();
-  //   };
-  // }, []);
-
   return (
     <section className={styles.background} id="secondSection">
-      <div className={styles.chatBox}>무료로 참여하는 방법 알아보기</div>
       <div className={scrollEvent ? styles.scrollTopBar : styles.topBar}>
         <Link
           to="secondSection"

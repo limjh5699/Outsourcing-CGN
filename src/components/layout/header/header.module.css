@@ -41,6 +41,44 @@ li a {
   background-color: #000000b0;
 }
 
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .background {
+    height: 4rem;
+  }
+
+  .background .logo {
+    height: 2rem;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .background {
+    height: 4rem;
+  }
+
+  .background .logo {
+    height: 1.7rem;
+  }
+
+  .burger {
+    font-size: 1.7rem;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .background {
+    height: 4rem;
+  }
+
+  .background .logo {
+    height: 1.7rem;
+  }
+
+  .burger {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 1445px) {
   .container {
     width: 70vw;
@@ -83,7 +121,7 @@ li a {
 
   .nav {
     width: 40%;
-    height: calc(100% - 6rem);
+    height: calc(100% - 4rem);
     position: fixed;
     right: -100%;
     bottom: 0;
@@ -95,7 +133,7 @@ li a {
 
   .openNav {
     width: 75%;
-    height: calc(100% - 6rem);
+    height: calc(100% - 4rem);
     position: fixed;
     right: 0;
     bottom: 0;

@@ -18,7 +18,7 @@ const FifthSection = () => {
           </p>
         </div>
         <div className={styles.bottom}>
-          <button>FMC 2023 카카오채널 바로가기</button>
+          <button>퐁당 네트워크 교회 인증하기</button>
         </div>
       </div>
     </section>

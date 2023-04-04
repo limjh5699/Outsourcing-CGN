@@ -60,7 +60,7 @@ const ThirdSection = () => {
                 그리고 기독교 전망
               </h1>
               <p className={styles.name}>데이비드 전 대표</p>
-              <p className={styles.company}>디엡랩</p>
+              <p className={styles.company}>디엠랩</p>
             </div>
           </div>
           <div className={styles.card}>

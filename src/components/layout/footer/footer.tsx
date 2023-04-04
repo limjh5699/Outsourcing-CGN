@@ -1,16 +1,24 @@
 import styles from "./footer.module.css";
 
 import logo from "../../../assets/layout/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className={styles.background}>
       <div className={styles.size}>
         <div className={styles.contents}>
-          <img src={logo} alt="logo" />
+          <Link to={"/"} style={{ display: "flex", alignItems: "center" }}>
+            <img src={logo} alt="logo" />
+          </Link>
           <div className={styles.container}>
-            <p>개인정보 처리방침</p>
-            <p>퐁당 소개</p>
+            <Link
+              to={"http://about.fondant.kr/about/download.html"}
+              target="_blank"
+              style={{ display: "flex", alignItems: "center" }}
+            >
+              <p>퐁당 소개</p>
+            </Link>
           </div>
         </div>
         <div className={styles.secContents}>

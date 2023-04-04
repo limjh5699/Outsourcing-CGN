@@ -82,6 +82,7 @@
   justify-content: center;
   font-size: 1.3rem;
   font-weight: 900;
+  cursor: pointer;
 }
 
 .background .contents .mid .container .box span {
@@ -160,18 +161,18 @@
 
   .background .contents .mid .container {
     width: 22rem;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .background .contents .mid .container .box {
-    width: 7rem;
+    width: 6.5rem;
     height: 9rem;
     font-size: 1rem;
   }
 
   .background .contents .mid .container .box p {
     line-height: 1.3rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .background .contents .mid .container .box div {

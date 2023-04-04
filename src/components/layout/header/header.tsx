@@ -34,7 +34,9 @@ const Header = () => {
     <header className={styles.background}>
       {openBar && <div className={styles.notBar} ref={notBarRef}></div>}
       <div className={styles.container}>
-        <img src={logo} alt="logo" className={styles.logo} />
+        <Link to={"/"} style={{ display: "flex", alignItems: "center" }}>
+          <img src={logo} alt="logo" className={styles.logo} />
+        </Link>
         <ul className={openBar === false ? styles.nav : styles.openNav}>
           <li>
             <Link to={"/"} onClick={() => setOpenBar(false)}>

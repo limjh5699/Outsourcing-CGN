@@ -1,4 +1,4 @@
-import TimeTable from "../components/main/timeTablePage/timeTable/timeTable";
+import TimeTable from "../components/main/timeTablePage/timeTable";
 
 const TimeTablePage = () => {
   return (

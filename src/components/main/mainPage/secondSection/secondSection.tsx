@@ -5,8 +5,6 @@ import styles from "./secondSection.module.css";
 import useScrollFadeIn from "../../../../hooks/useScrollFadeIn";
 
 const SecondSection = () => {
-  console.log(window.innerWidth);
-
   const animatedItem = {
     0: useScrollFadeIn({ direction: "up", duration: 1, delay: 0 }),
     1: useScrollFadeIn({ direction: "up", duration: 1, delay: 0 }),
@@ -40,15 +38,7 @@ const SecondSection = () => {
         </div>
       </div>
       <div className={styles.bottom}>
-        <Marquee
-          style={{
-            height: "100%",
-            color: "#6565FA",
-            fontSize: "2rem",
-            fontWeight: "400",
-          }}
-          gradient={false}
-        >
+        <Marquee className={styles.marquee} gradient={false}>
           fondant Media Conference 2023 &nbsp; fondant Media Conference 2023
           &nbsp; fondant Media Conference 2023 &nbsp; fondant Media Conference
           2023 &nbsp; fondant Media Conference 2023 &nbsp;

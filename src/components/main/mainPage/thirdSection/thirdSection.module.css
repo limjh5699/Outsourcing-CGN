@@ -18,7 +18,9 @@
 }
 
 .background .text {
-  width: 70vw;
+  position: absolute;
+  top: 5rem;
+  width: 80vw;
 }
 
 .background .text .title {
@@ -36,7 +38,6 @@
 .background .contents {
   width: 70vw;
   margin: 0 auto;
-  margin-top: 10%;
   display: flex;
   justify-content: center;
 }
@@ -98,7 +99,7 @@
 
 @media all and (min-width: 480px) and (max-width: 767px) {
   .background .text .title {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   .background .text .subTitle {
@@ -107,8 +108,12 @@
 }
 
 @media all and (max-width: 479px) {
+  .background span {
+    font-size: 1.5rem;
+  }
+
   .background .text .title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .background .text .subTitle {

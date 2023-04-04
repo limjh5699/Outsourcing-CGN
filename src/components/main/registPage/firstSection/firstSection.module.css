@@ -42,6 +42,7 @@
 }
 
 .background .contents .box {
+  position: relative;
   height: 18rem;
   border-radius: 40px;
   margin: 2rem auto 0 auto;
@@ -67,6 +68,31 @@
   font-weight: 600;
 }
 
+.background .contents .box .chatBox {
+  position: absolute;
+  bottom: -3rem;
+  background-color: #6045e4;
+  padding: 1.3rem 3.5rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.background .contents .box .chatBox::after {
+  border-color: #6045e4 transparent;
+  border-style: solid;
+  border-width: 1.5rem 1.3rem 0 1.3rem;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -2.2rem;
+  transform: translate(-50%, -50%);
+  width: 0;
+  z-index: 1;
+}
+
 .background .contents .box .box1,
 .background .contents .box .box2,
 .background .contents .box .box3 {
@@ -79,7 +105,12 @@
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
   .background {
-    height: 100vh;
+    height: 55rem;
+    padding-top: 4rem;
+  }
+
+  .background .title {
+    top: 7rem;
   }
 
   .background .title h1 {
@@ -115,6 +146,16 @@
     font-weight: 600;
   }
 
+  .background .contents .box .chatBox {
+    padding: 1.3rem 3.5rem;
+    font-size: 1.3rem;
+  }
+
+  .background .contents .box .chatBox::after {
+    border-width: 1.5rem 1.3rem 0 1.3rem;
+    bottom: -2.2rem;
+  }
+
   .background .contents .box .box1,
   .background .contents .box .box2,
   .background .contents .box .box3 {
@@ -124,11 +165,16 @@
 
 @media all and (min-width: 480px) and (max-width: 767px) {
   .background {
-    height: 100vh;
+    height: 50rem;
+    padding-top: 4rem;
+  }
+
+  .background .title {
+    top: 7rem;
   }
 
   .background .title h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
   .background .contents h2 {
@@ -161,6 +207,16 @@
     font-weight: 600;
   }
 
+  .background .contents .box .chatBox {
+    padding: 1.3rem 3.5rem;
+    font-size: 0.9rem;
+  }
+
+  .background .contents .box .chatBox::after {
+    border-width: 1.5rem 1.3rem 0 1.3rem;
+    bottom: -2.2rem;
+  }
+
   .background .contents .box .box1,
   .background .contents .box .box2,
   .background .contents .box .box3 {
@@ -170,11 +226,16 @@
 
 @media all and (max-width: 479px) {
   .background {
-    height: 100vh;
+    height: 45rem;
+    padding-top: 4rem;
+  }
+
+  .background .title {
+    top: 6rem;
   }
 
   .background .title h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .background .contents h2 {
@@ -205,6 +266,17 @@
     text-align: center;
     font-size: 0.8rem;
     font-weight: 600;
+  }
+
+  .background .contents .box .chatBox {
+    padding: 1rem 2.5rem;
+    font-size: 0.5rem;
+    bottom: -2rem;
+  }
+
+  .background .contents .box .chatBox::after {
+    border-width: 1.5rem 1.3rem 0 1.3rem;
+    bottom: -1.5rem;
   }
 
   .background .contents .box .box1,

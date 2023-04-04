@@ -5,7 +5,7 @@ import RegistPage from "./pages/registPage";
 import TimeTablePage from "./pages/timeTablePage";
 import FAQPage from "./pages/FAQPage";
 import PlacePage from "./pages/placePage";
-import EventPage from "./components/main/eventPage/event";
+import EventPage from "./pages/eventPage";
 
 const Router = () => {
   return (

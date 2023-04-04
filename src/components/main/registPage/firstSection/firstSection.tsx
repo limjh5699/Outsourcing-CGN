@@ -10,11 +10,11 @@ const FirstSection = () => {
         <h2>
           [FMC 2023]을 참여하는 {window.innerWidth <= 767 ? <br /> : ""} 4가지
           방법 <br />
-          지금 바로 참가 신청하세요!
+          지금 바로 신청하세요!
         </h2>
         <p className={styles.day}>
           온라인 사전 신청 기간 {window.innerWidth <= 767 ? <br /> : "|"} 2023년
-          4월 1일 ~ 5월 21일
+          4월 10일 (월) ~ 5월 21일 (일)
         </p>
         <div className={styles.box}>
           <div className={styles.box1}>
@@ -43,6 +43,7 @@ const FirstSection = () => {
             </p>
             <p className={styles.price}>무료</p>
           </div>
+          <div className={styles.chatBox}>무료로 참여하는 방법 알아보기</div>
         </div>
       </div>
     </section>

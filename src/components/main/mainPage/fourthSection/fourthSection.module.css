@@ -123,16 +123,19 @@
 
   .background .contents .container .mid p {
     font-size: 1.4rem;
+    margin-top: 4rem;
   }
 
   .background .contents .container .mid .gift {
     width: 24rem;
     height: 12rem;
+    margin-top: 5rem;
   }
 
   .background .contents .container .bottom .rectangle {
     width: 8rem;
     height: 8rem;
+    margin-top: 3rem;
   }
 
   .background .contents .container .bottom .rectangle img {
@@ -147,53 +150,61 @@
 
 @media all and (min-width: 480px) and (max-width: 767px) {
   .background .text .title {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   .background .text .subTitle {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .background .contents .container .top h1 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
   .background .contents .container .top img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
 
   .background .contents .container .mid p {
-    font-size: 0.8rem;
-    margin-top: 5rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
   }
 
   .background .contents .container .mid .gift {
-    width: 15rem;
-    height: 8rem;
-    margin-top: 5rem;
+    width: 20rem;
+    height: 10rem;
+    margin-top: 4rem;
   }
 
   .background .contents .container .bottom .rectangle {
-    margin-top: 5rem;
-    width: 5rem;
-    height: 5rem;
+    margin-top: 4rem;
+    width: 7.5rem;
+    height: 7.5rem;
   }
 
   .background .contents .container .bottom .rectangle img {
-    height: 2rem;
+    height: 2.5rem;
   }
 
   .background .contents .container .bottom .rectangle p {
-    margin-top: 0.5rem;
-    font-size: 0.5rem;
+    margin-top: 0.8rem;
+    font-size: 1rem;
   }
 }
 
 /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
 @media all and (max-width: 479px) {
+  .background {
+    height: 50rem;
+  }
+
+  .background span {
+    font-size: 1.5rem;
+  }
+
   .background .text .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .background .text .subTitle {
@@ -201,75 +212,102 @@
   }
 
   .background .contents .container .top h1 {
-    font-size: 1rem;
-    margin: 0;
+    font-size: 1.2rem;
     text-align: center;
   }
 
   .background .contents .container .top img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
   }
 
   .background .contents .container .mid p {
-    font-size: 0.8rem;
-    margin-top: 5rem;
+    font-size: 1.1rem;
+    margin-top: 2rem;
   }
 
   .background .contents .container .mid .gift {
-    width: 15rem;
-    height: 8rem;
+    width: 18rem;
+    height: 10rem;
     border-radius: 10px;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
   .background .contents .container .bottom .rectangle {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
     margin: 0 0.5rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
   .background .contents .container .bottom .rectangle img {
-    height: 1.5rem;
+    height: 1.8rem;
   }
 
   .background .contents .container .bottom .rectangle p {
     margin-top: 0.5rem;
-    font-size: 0.5rem;
+    font-size: 0.9rem;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
+  .background {
+    height: 45rem;
+  }
+
   .background .contents .container .top h1 {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .background .contents .container .mid p {
-    font-size: 0.7rem;
-    margin-top: 5rem;
+    font-size: 0.9rem;
+    margin-top: 2.7rem;
+  }
+
+  .background .contents .container .mid .gift {
+    width: 16rem;
+    height: 8rem;
+  }
+
+  .background .contents .container .bottom .rectangle {
+    width: 6rem;
+    height: 6rem;
+    margin-top: 2rem;
+  }
+
+  .background .contents .container .bottom .rectangle img {
+    height: 1.8rem;
+  }
+
+  .background .contents .container .bottom .rectangle p {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 1445px) {
+  .background .contents,
   .background .text {
     width: 70vw;
   }
 }
 
 @media (max-width: 1384px) {
+  .background .contents,
   .background .text {
     width: 80vw;
   }
 }
 
 @media (max-width: 1210px) {
+  .background .contents,
   .background .text {
     width: 90vw;
   }
 }
 
 @media (max-width: 1080px) {
+  .background .contents,
   .background .text {
     width: 90vw;
   }
