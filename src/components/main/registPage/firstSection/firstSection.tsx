@@ -37,9 +37,9 @@ const FirstSection = () => {
           <div className={styles.dashes}></div>
           <div className={styles.box3}>
             <p>
-              온라인
+              온라인 사전
               <br />
-              사전 참가등록
+              참가등록
             </p>
             <p className={styles.price}>무료</p>
           </div>

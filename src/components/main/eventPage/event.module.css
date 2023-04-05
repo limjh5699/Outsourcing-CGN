@@ -173,15 +173,40 @@
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
+  .background .title {
+    top: 6rem;
+  }
+
+  .background .contents {
+    margin-top: 16.3rem;
+  }
 }
 
 @media all and (min-width: 480px) and (max-width: 767px) {
+  .background {
+    height: 110rem;
+  }
+
+  .background .title {
+    top: 6rem;
+  }
+
   .background .title h1 {
     font-size: 2.5rem;
   }
 
+  .background .contents {
+    margin-top: 13.3rem;
+  }
+
   .background .contents .box1 p {
     font-size: 1.3rem;
+  }
+
+  .background .contents .box2,
+  .background .contents .box3,
+  .background .contents .box4 {
+    margin-top: 6.3rem;
   }
 
   .background .contents .box1 .textBox {
@@ -213,6 +238,7 @@
   .background .contents .box3 table td,
   .background .contents .box4 table td {
     font-size: 0.8rem;
+    line-height: 1.5rem;
   }
 
   .background .contents .box1 h1,
@@ -233,11 +259,19 @@
 
 @media all and (max-width: 479px) {
   .background {
-    height: 120rem;
+    height: 85rem;
+  }
+
+  .background .title {
+    top: 6rem;
   }
 
   .background .title h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .background .contents {
+    margin-top: 12.3rem;
   }
 
   .background .contents .box1 p {
@@ -261,6 +295,12 @@
     height: 9rem;
   }
 
+  .background .contents .box2,
+  .background .contents .box3,
+  .background .contents .box4 {
+    margin-top: 5.3rem;
+  }
+
   .background .contents .box1 table,
   .background .contents .box2 table,
   .background .contents .box3 table,
@@ -273,6 +313,7 @@
   .background .contents .box3 table td,
   .background .contents .box4 table td {
     font-size: 0.6rem;
+    line-height: 1rem;
   }
 
   .background .contents .box1 h1,

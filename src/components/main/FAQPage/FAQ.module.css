@@ -84,8 +84,9 @@
 
 .background .contents .faq .container .contentSection pre {
   padding: 0.5rem 10.6vw;
-  line-height: 2rem;
+  line-height: 3rem;
   white-space: pre-wrap;
+  overflow: auto;
 }
 
 .background .contents .faq .container .close {
@@ -181,7 +182,7 @@
 
   .background .contents .faq .container .contentSection pre {
     padding: 0.5rem 2vw;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 

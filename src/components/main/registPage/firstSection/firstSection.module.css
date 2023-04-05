@@ -54,7 +54,7 @@
 
 .background .contents .box .dashes {
   height: 10rem;
-  border: 0.1rem dashed #000;
+  border: 0.1rem dashed #999999;
 }
 
 .background .contents .box .price {
@@ -96,6 +96,7 @@
 .background .contents .box .box1,
 .background .contents .box .box2,
 .background .contents .box .box3 {
+  width: 140px;
   margin: 0 3rem;
 }
 
@@ -132,7 +133,7 @@
 
   .background .contents .box .dashes {
     height: 8rem;
-    border: 0.1rem dashed #000;
+    border: 0.1rem dashed #999999;
   }
 
   .background .contents .box .price {
@@ -193,7 +194,7 @@
 
   .background .contents .box .dashes {
     height: 6rem;
-    border: 0.1rem dashed #000;
+    border: 0.1rem dashed #999999;
   }
 
   .background .contents .box .price {
@@ -220,7 +221,7 @@
   .background .contents .box .box1,
   .background .contents .box .box2,
   .background .contents .box .box3 {
-    margin: 0 1rem;
+    margin: 0;
   }
 }
 
@@ -248,13 +249,12 @@
 
   .background .contents .box {
     height: 9.5rem;
-    margin: 3rem auto 0 auto;
     border-radius: 20px;
   }
 
   .background .contents .box .dashes {
     height: 5rem;
-    border: 0.1rem dashed #000;
+    border: 0.1rem dashed #999999;
   }
 
   .background .contents .box .price {
@@ -264,13 +264,13 @@
   .background .contents .box p {
     color: #000;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 600;
   }
 
   .background .contents .box .chatBox {
     padding: 1rem 2.5rem;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     bottom: -2rem;
   }
 
@@ -282,7 +282,8 @@
   .background .contents .box .box1,
   .background .contents .box .box2,
   .background .contents .box .box3 {
-    margin: 0 1rem;
+    margin: 0;
+    width: 100px;
   }
 }
 

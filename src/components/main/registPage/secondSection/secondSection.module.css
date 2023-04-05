@@ -34,7 +34,7 @@
 
 .background .scrollTopBar {
   position: fixed;
-  bottom: 0;
+  top: 0;
 }
 .background .topBar {
   top: 0;
@@ -147,6 +147,10 @@
     padding: 0 3rem;
   }
 
+  .background .scrollTopBar {
+    margin-top: 4rem;
+  }
+
   .background .scrollTopBar,
   .background .topBar {
     height: 6rem;
@@ -171,6 +175,10 @@
   .background .box,
   .background .selectedBox {
     padding: 0 1rem;
+  }
+
+  .background .scrollTopBar {
+    margin-top: 4rem;
   }
 
   .background .scrollTopBar,
@@ -215,7 +223,15 @@
 
   .background .box,
   .background .selectedBox {
-    padding: 0 0.5rem;
+    width: 25%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .background .scrollTopBar {
+    margin-top: 4rem;
   }
 
   .background .scrollTopBar,
@@ -225,7 +241,7 @@
 
   .background .scrollTopBar p,
   .background .topBar p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .background .contents .mid h1 {

@@ -1,15 +1,55 @@
-import { useState, useEffect, useMemo } from "react";
-import { throttle } from "lodash";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 
 import styles from "./secondSection.module.css";
 
 const SecondSection = () => {
+  const ref = useRef<HTMLDivElement>(null);
+
   const [scrollEvent, setScrollEvent] = useState(false);
   const [viewSection, setViewSection] = useState("firstSection");
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (ref.current) {
+        const { top } = ref.current.getBoundingClientRect();
+        const height = window.innerWidth <= 1023 ? 63 : 0;
+        if (top < height) {
+          setScrollEvent(true);
+        } else {
+          setScrollEvent(false);
+        }
+        console.log(height);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry: any) => {
+          if (entry.isIntersecting) {
+            setViewSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    document.querySelectorAll("section").forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <section className={styles.background} id="secondSection">
+    <section className={styles.background} id="secondSection" ref={ref}>
       <div className={scrollEvent ? styles.scrollTopBar : styles.topBar}>
         <Link
           to="secondSection"
@@ -26,7 +66,7 @@ const SecondSection = () => {
             교회 가입
           </p>
         </Link>
-        <div className={styles.border}></div>
+        {window.innerWidth <= 479 ? "" : <div className={styles.border}></div>}
         <Link
           to="thirdSection"
           className={styles.box}
@@ -40,7 +80,7 @@ const SecondSection = () => {
             참가자 등록
           </p>
         </Link>
-        <div className={styles.border}></div>
+        {window.innerWidth <= 479 ? "" : <div className={styles.border}></div>}
         <Link
           to="fourthSection"
           className={styles.box}
@@ -52,7 +92,7 @@ const SecondSection = () => {
         >
           <p>신학생 인증</p>
         </Link>
-        <div className={styles.border}></div>
+        {window.innerWidth <= 479 ? "" : <div className={styles.border}></div>}
         <Link
           to="fifthSection"
           className={styles.box}
