@@ -1,5 +1,5 @@
 .background {
-  height: 144rem;
+  height: 150rem;
   background-color: #001633;
   display: flex;
   flex-direction: column;
@@ -173,6 +173,10 @@
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
+  .background {
+    height: 140rem;
+  }
+
   .background .title {
     top: 6rem;
   }
@@ -180,11 +184,25 @@
   .background .contents {
     margin-top: 16.3rem;
   }
+
+  .background .contents .box1 h1,
+  .background .contents .box2 h1,
+  .background .contents .box3 h1,
+  .background .contents .box4 h1 {
+    font-size: 1.8rem;
+  }
+
+  .background .contents .box1 table td,
+  .background .contents .box2 table td,
+  .background .contents .box3 table td,
+  .background .contents .box4 table td {
+    font-size: 1.2rem;
+  }
 }
 
 @media all and (min-width: 480px) and (max-width: 767px) {
   .background {
-    height: 110rem;
+    height: 120rem;
   }
 
   .background .title {
@@ -259,7 +277,7 @@
 
 @media all and (max-width: 479px) {
   .background {
-    height: 85rem;
+    height: 95rem;
   }
 
   .background .title {
