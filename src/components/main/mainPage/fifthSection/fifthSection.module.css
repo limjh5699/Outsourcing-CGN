@@ -110,6 +110,10 @@
     height: 20rem;
   }
 
+  .background .contents .traffic h2 {
+    font-size: 1.5rem;
+  }
+
   .background .contents .traffic .bus .container .two {
     margin-left: 3rem;
   }
@@ -117,7 +121,7 @@
 
 @media all and (min-width: 480px) and (max-width: 767px) {
   .background {
-    height: 75rem;
+    height: 100rem;
   }
 
   .background .text .title {
@@ -144,17 +148,27 @@
 
   .background .contents .traffic p,
   .background .contents .traffic li {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+  }
+
+  .background .contents .traffic h2 {
+    font-size: 1.6rem;
+  }
+
+  .background .contents .traffic .bus .container {
+    flex-direction: column;
   }
 
   .background .contents .traffic .bus .container .two {
-    margin-left: 0;
+    margin: 0;
+    margin-top: 1rem;
   }
 }
 
 @media all and (max-width: 479px) {
   .background {
-    height: 70rem;
+    height: 80rem;
   }
 
   .background .text .title {
@@ -176,7 +190,7 @@
   }
 
   .background .contents .traffic h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .background .contents .mapArea p {
@@ -185,11 +199,16 @@
 
   .background .contents .traffic p,
   .background .contents .traffic li {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .background .contents .traffic .bus .container {
+    flex-direction: column;
   }
 
   .background .contents .traffic .bus .container .two {
-    margin-left: 0;
+    margin: 0;
+    margin-top: 1rem;
   }
 }
 

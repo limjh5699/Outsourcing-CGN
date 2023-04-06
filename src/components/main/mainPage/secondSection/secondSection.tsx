@@ -19,20 +19,26 @@ const SecondSection = () => {
       <div className={styles.middle}>
         <div {...animatedItem[0]}>
           <p className={styles.text1}>
-            이제는 AI시대, 교회의 미디어 솔루션은 ?
+            이제는 AI시대, {window.innerWidth <= 767 ? <br /> : ""}교회의 미디어
+            솔루션은 ?
           </p>
         </div>
         <div {...animatedItem[1]}>
           <p className={styles.text2}>
-            Contents는 Cloud에서 {window.innerWidth <= 530 ? <br /> : ""} Care은
+            Contents는 {window.innerWidth <= 767 ? <br /> : ""} Cloud에서{" "}
+            {window.innerWidth <= 767 ? <br /> : ""} Care은{" "}
+            {window.innerWidth <= 767 ? <br /> : ""}
             Community 에서
           </p>
         </div>
         <div {...animatedItem[2]}>
           <p className={styles.text3}>
-            이제 교회는 새로운 시대에 맞는 새로운 미디어 전략이 필요합니다.{" "}
+            이제 교회는 새로운 시대에 맞는
+            {window.innerWidth <= 767 ? <br /> : ""}새로운 미디어 전략이
+            필요합니다. <br />
+            복음을 전하고 성도를 목양하는{" "}
+            {window.innerWidth <= 767 ? <br /> : ""}새로운 방법을 공개합니다.{" "}
             <br />
-            복음을 전하고 성도를 목양하는 새로운 방법을 공개합니다. <br />
             한국 교회를 섬기는 퐁당이 함께합니다.
           </p>
         </div>

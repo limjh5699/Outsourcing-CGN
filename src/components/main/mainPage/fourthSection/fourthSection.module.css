@@ -53,17 +53,16 @@
   align-items: center;
 }
 
-.background .contents .container .top img {
-  width: 50px;
-  height: 50px;
-}
-
 .background .contents .container .top h1 {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin: 0 0.8rem;
   color: #6045e4;
   font-size: 2.6rem;
   font-weight: 800;
+  text-align: center;
+  align-items: center;
+  line-height: 2rem;
 }
 
 .background .contents .container .mid {
@@ -83,8 +82,11 @@
   width: 28rem;
   height: 14rem;
   border-radius: 30px;
-  margin-top: 1.8rem;
-  background-color: #d6d6d6;
+  margin-top: 1.5rem;
+}
+
+.background .contents .container .mid .gift img {
+  width: 100%;
 }
 
 .background .contents .container .bottom {
@@ -101,6 +103,7 @@
   height: 12rem;
   border-radius: 50%;
   margin: 0 1rem;
+  margin-top: 2rem;
   background-color: #fff;
 }
 
@@ -112,30 +115,36 @@
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
+  .background {
+    height: 70rem;
+  }
+
   .background .contents .container .top h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
   }
 
   .background .contents .container .top img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 
   .background .contents .container .mid p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin-top: 4rem;
+    line-height: 3rem;
   }
 
   .background .contents .container .mid .gift {
-    width: 24rem;
+    width: 30rem;
     height: 12rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 
   .background .contents .container .bottom .rectangle {
     width: 8rem;
     height: 8rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 
   .background .contents .container .bottom .rectangle img {
@@ -158,27 +167,29 @@
   }
 
   .background .contents .container .top h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
   }
 
   .background .contents .container .top img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
 
   .background .contents .container .mid p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     margin-top: 3rem;
   }
 
   .background .contents .container .mid .gift {
-    width: 20rem;
+    width: 27rem;
     height: 10rem;
-    margin-top: 4rem;
+    margin-top: 1.5rem;
   }
 
   .background .contents .container .bottom .rectangle {
-    margin-top: 4rem;
+    margin-top: 5rem;
     width: 7.5rem;
     height: 7.5rem;
   }
@@ -193,7 +204,6 @@
   }
 }
 
-/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
 @media all and (max-width: 479px) {
   .background {
     height: 50rem;
@@ -212,7 +222,7 @@
   }
 
   .background .contents .container .top h1 {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     text-align: center;
   }
 
@@ -222,15 +232,16 @@
   }
 
   .background .contents .container .mid p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-top: 2rem;
+    line-height: 2rem;
   }
 
   .background .contents .container .mid .gift {
-    width: 18rem;
+    width: 22rem;
     height: 10rem;
     border-radius: 10px;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .background .contents .container .bottom .rectangle {
@@ -252,16 +263,18 @@
 
 @media (max-width: 360px) {
   .background {
-    height: 45rem;
+    height: 50rem;
   }
 
   .background .contents .container .top h1 {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
   }
 
   .background .contents .container .mid p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-top: 2.7rem;
+    line-height: 1.5rem;
   }
 
   .background .contents .container .mid .gift {

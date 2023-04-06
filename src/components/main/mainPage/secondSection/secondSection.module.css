@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 
 .top {
@@ -37,7 +39,7 @@
 
 .middle .text2 {
   font-size: 3.4rem;
-  font-weight: 400;
+  font-weight: 900;
   color: #fff;
   text-align: center;
 }
@@ -91,19 +93,24 @@
 
 @media all and (min-width: 480px) and (max-width: 767px) {
   .middle {
-    height: 25rem;
+    height: 43rem;
   }
 
   .middle .text1 {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 
   .middle .text2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    line-height: 4.5rem;
   }
 
   .middle .text3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    margin-top: 4rem;
+    line-height: 2rem;
   }
 
   .bottom {
@@ -121,19 +128,23 @@
   }
 
   .middle {
-    height: 20rem;
+    height: 31rem;
   }
 
   .middle .text1 {
-    font-size: 1rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
 
   .middle .text2 {
-    font-size: 1.5rem;
+    margin-top: 4rem;
+    font-size: 2rem;
+    line-height: 3.5rem;
   }
 
   .middle .text3 {
-    font-size: 0.75rem;
+    margin-top: 4rem;
+    font-size: 1rem;
     line-height: 1.5rem;
   }
 

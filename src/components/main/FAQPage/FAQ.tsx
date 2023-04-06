@@ -237,32 +237,66 @@ FMC23 공식 사무국 00-000-0000으로 문의 주십시오.
         <h1>자주 묻는 질문</h1>
       </div>
       <div className={styles.contents}>
-        <div className={styles.topBar}>
-          <button
-            className={topActive === 0 ? styles.topActive : null}
-            onClick={() => setTopActive(0)}
-          >
-            참가 신청
-          </button>
-          <button
-            className={topActive === 1 ? styles.topActive : null}
-            onClick={() => setTopActive(1)}
-          >
-            행사 / 강연
-          </button>
-          <button
-            className={topActive === 2 ? styles.topActive : null}
-            onClick={() => setTopActive(2)}
-          >
-            퐁당 네트워크 교회
-          </button>
-          <button
-            className={topActive === 3 ? styles.topActive : null}
-            onClick={() => setTopActive(3)}
-          >
-            기타
-          </button>
-        </div>
+        {window.innerWidth <= 767 ? (
+          <div className={styles.topBar}>
+            <div className={styles.container}>
+              <button
+                className={topActive === 0 ? styles.topActive : null}
+                onClick={() => setTopActive(0)}
+              >
+                참가 신청
+              </button>
+              <button
+                className={topActive === 1 ? styles.topActive : null}
+                onClick={() => setTopActive(1)}
+              >
+                행사 / 강연
+              </button>
+            </div>
+            <div className={styles.container}>
+              <button
+                className={topActive === 2 ? styles.topActive : null}
+                onClick={() => setTopActive(2)}
+              >
+                퐁당 네트워크 교회
+              </button>
+              <button
+                className={topActive === 3 ? styles.topActive : null}
+                onClick={() => setTopActive(3)}
+              >
+                기타
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className={styles.topBar}>
+            <button
+              className={topActive === 0 ? styles.topActive : null}
+              onClick={() => setTopActive(0)}
+            >
+              참가 신청
+            </button>
+            <button
+              className={topActive === 1 ? styles.topActive : null}
+              onClick={() => setTopActive(1)}
+            >
+              행사 / 강연
+            </button>
+            <button
+              className={topActive === 2 ? styles.topActive : null}
+              onClick={() => setTopActive(2)}
+            >
+              퐁당 네트워크 교회
+            </button>
+            <button
+              className={topActive === 3 ? styles.topActive : null}
+              onClick={() => setTopActive(3)}
+            >
+              기타
+            </button>
+          </div>
+        )}
+
         <div className={styles.faq}>
           {datas[topActive].map((data, index) => (
             <div key={index} className={styles.container}>

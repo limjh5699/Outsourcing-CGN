@@ -30,9 +30,13 @@ const Footer = () => {
             CopyrightⓒCGN. All right reserved.
           </span>
         </div>
-      </div>
-      <div className={styles.sponsor}>
-        <span>후원사</span>
+        <div className={styles.tellNum}>
+          <h2>문의 번호</h2>
+          <span>
+            퐁당 네트워크 가입 관련 | 02-3275-9371 <br />
+            FMC 일반 문의 및 접수 | 02-3275-9372, 02-3275-9373
+          </span>
+        </div>
       </div>
     </div>
   );

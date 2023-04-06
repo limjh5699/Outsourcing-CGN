@@ -44,6 +44,31 @@
   background-color: #6045e4;
 }
 
+.background .contents .topBar .container {
+  width: 50%;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.background .contents .topBar .container button {
+  font-size: 1.5rem;
+  width: 90%;
+  height: 3rem;
+  border: 1px solid #6045e4;
+  border-radius: 5px;
+  background: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.background .contents .topBar .container .topActive {
+  color: #fff;
+  background-color: #6045e4;
+}
+
 .background .contents .faq {
   margin-top: 5rem;
   border-top: 1px solid #000;
@@ -129,8 +154,8 @@
     margin-top: 3rem;
   }
 
-  .background .contents .topBar button {
-    font-size: 0.7rem;
+  .background .contents .topBar .container button {
+    font-size: 1.3rem;
   }
 
   .background .contents .faq .container .table .tableTitle {
@@ -166,8 +191,8 @@
     margin-top: 1rem;
   }
 
-  .background .contents .topBar button {
-    font-size: 0.5rem;
+  .background .contents .topBar .container button {
+    font-size: 1rem;
   }
 
   .background .contents .faq .container .table .tableTitle {

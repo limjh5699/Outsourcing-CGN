@@ -4,6 +4,8 @@ import balloon from "../../../../assets/mainPage/balloon.png";
 import stamp from "../../../../assets/mainPage/stamp.png";
 import chat from "../../../../assets/mainPage/chat.png";
 import clover from "../../../../assets/mainPage/clover.png";
+import gift from "../../../../assets/mainPage/gift.png";
+
 import useScrollFadeIn from "../../../../hooks/useScrollFadeIn";
 
 const FourthSection = () => {
@@ -26,18 +28,25 @@ const FourthSection = () => {
       <div className={styles.contents}>
         <div className={styles.container}>
           <div className={styles.top} {...animatedItem[0]}>
-            <img src={balloon} alt="balloon" />
-            <h1>퐁당 미디어 콘퍼런스 100% 즐기기</h1>
-            <img src={balloon} alt="balloon" />
+            <h1>
+              <img src={balloon} alt="balloon" />
+              퐁당 미디어 콘퍼런스 {window.innerWidth <= 767 ? <br /> : ""}100%
+              즐기기
+              <img src={balloon} alt="balloon" />
+            </h1>
           </div>
           <div className={styles.mid}>
             <div {...animatedItem[1]}>
               <p>
-                5/29 당일 현장에서 다양한 이벤트가 진행됩니다! <br />꼭
-                참여하셔서 푸짐한 상품도 받아 가세요!
+                5/29 당일 현장에서 {window.innerWidth <= 767 ? <br /> : ""}
+                다양한 이벤트가 진행됩니다! <br />꼭 참여하셔서{" "}
+                {window.innerWidth <= 767 ? <br /> : ""} 푸짐한 상품도 받아
+                가세요!
               </p>
             </div>
-            <div className={styles.gift} {...animatedItem[2]}></div>
+            <div className={styles.gift} {...animatedItem[2]}>
+              <img src={gift} alt="gift" />
+            </div>
           </div>
           <div className={styles.bottom} {...animatedItem[3]}>
             <div className={styles.rectangle}>

@@ -157,7 +157,8 @@ li a {
     list-style: none;
     line-height: 6rem;
     margin: 0 1rem;
-    height: 6rem;
+    font-weight: 600;
+    height: 5rem;
   }
 
   .burger {

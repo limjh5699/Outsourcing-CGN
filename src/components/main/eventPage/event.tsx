@@ -1,10 +1,10 @@
 import styles from "./event.module.css";
 
 import fireworks from "../../../assets/eventPage/fireworks.png";
-import map from "../../../assets/eventPage/mapImg.png";
 import stamp from "../../../assets/eventPage/stamp.png";
 import chat from "../../../assets/eventPage/chat.png";
 import clover from "../../../assets/eventPage/clover.png";
+import gift from "../../../assets/eventPage/gift.png";
 
 const Event = () => {
   return (
@@ -23,7 +23,7 @@ const Event = () => {
             5/29 당일 현장에 다양한 이벤트가 진행됩니다!
             <br />꼭 참여하셔서 푸짐한 상품도 받아가세요!
           </p>
-          <img src={map} alt="맵" className={styles.mapImg} />
+          <img src={gift} alt="gift" className={styles.gift} />
         </div>
         <div className={styles.box2}>
           <img src={stamp} alt="스탬프" />

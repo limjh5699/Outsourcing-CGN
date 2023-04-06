@@ -6,10 +6,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import human1 from "../../../../../assets/mainPage/human1.png";
-import human2 from "../../../../../assets/mainPage/human2.png";
-import human3 from "../../../../../assets/mainPage/human3.png";
-import human4 from "../../../../../assets/mainPage/human4.png";
+import lecturer1 from "../../../../../assets/mainPage/lecturer1.png";
+import lecturer2 from "../../../../../assets/mainPage/lecturer2.png";
+import lecturer3 from "../../../../../assets/mainPage/lecturer3.png";
+import lecturer4 from "../../../../../assets/mainPage/lecturer4.png";
 
 const ThirdSwiper = () => {
   return (
@@ -36,7 +36,7 @@ const ThirdSwiper = () => {
     >
       <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
         <div className={styles.card}>
-          <img className={styles.img} src={human1} alt={"이재훈"} />
+          <img className={styles.img} src={lecturer1} alt={"이재훈"} />
           <div className={styles.info}>
             <h1 className={styles.title}>
               AI 시대의 목회와
@@ -50,12 +50,12 @@ const ThirdSwiper = () => {
       </SwiperSlide>
       <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
         <div className={styles.card}>
-          <img className={styles.img} src={human2} alt={"김경훈"} />
+          <img className={styles.img} src={lecturer2} alt={"김경훈"} />
           <div className={styles.info}>
             <h1 className={styles.title}>
-              미디어 전망,
+              미디어와
               <br />
-              그리고 퐁당
+              커뮤니케이션
             </h1>
             <p className={styles.name}>김경훈 사장</p>
             <p className={styles.company}>구글 코리아</p>
@@ -64,7 +64,7 @@ const ThirdSwiper = () => {
       </SwiperSlide>
       <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
         <div className={styles.card}>
-          <img className={styles.img} src={human3} alt={"데이비드"} />
+          <img className={styles.img} src={lecturer3} alt={"데이비드"} />
           <div className={styles.info}>
             <h1 className={styles.title}>
               AI, 미래 사회
@@ -78,7 +78,7 @@ const ThirdSwiper = () => {
       </SwiperSlide>
       <SwiperSlide style={{ display: "flex", justifyContent: "center" }}>
         <div className={styles.card}>
-          <img className={styles.img} src={human4} alt={"바비 그룬왈드"} />
+          <img className={styles.img} src={lecturer4} alt={"바비 그룬왈드"} />
           <div className={styles.info}>
             <h1 className={styles.title}>
               4C 및 온라인 교회

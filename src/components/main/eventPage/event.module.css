@@ -36,6 +36,7 @@
 .background .contents .box1 .textBox {
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 
 .background .contents .box1 .textBox img {
@@ -56,9 +57,11 @@
   text-align: center;
 }
 
-.background .contents .box1 .mapImg {
+.background .contents .box1 .gift {
   margin: 0 auto;
   margin-top: 2rem;
+  width: 100%;
+  height: 100%;
 }
 
 .background .contents .box2 {
@@ -232,16 +235,12 @@
   }
 
   .background .contents .box1 .textBox img {
-    display: none;
+    width: 30px;
+    height: 30px;
   }
 
   .background .contents .box1 .textBox h1 {
-    font-size: 1.8rem;
-  }
-
-  .background .contents .box1 .mapImg {
-    width: 25rem;
-    height: 13rem;
+    font-size: 1.4rem;
   }
 
   .background .contents .box1 table,
@@ -301,16 +300,13 @@
   }
 
   .background .contents .box1 .textBox img {
-    display: none;
+    width: 20px;
+    height: 20px;
   }
 
   .background .contents .box1 .textBox h1 {
-    font-size: 1.2rem;
-  }
-
-  .background .contents .box1 .mapImg {
-    width: 16rem;
-    height: 9rem;
+    font-size: 1.1rem;
+    margin: 0 0.5rem;
   }
 
   .background .contents .box2,
