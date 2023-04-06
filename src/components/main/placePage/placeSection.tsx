@@ -8,26 +8,26 @@ import place3 from "../../../assets/placePage/place3.png";
 const { kakao }: any = window;
 
 const PlaceSection = () => {
-  useEffect(() => {
-    let container = document.getElementById("map");
-    let options = {
-      center: new kakao.maps.LatLng(37.46624030654503, 127.03276428109496),
-      level: 3,
-    };
+  // useEffect(() => {
+  //   let container = document.getElementById("map");
+  //   let options = {
+  //     center: new kakao.maps.LatLng(37.46624030654503, 127.03276428109496),
+  //     level: 3,
+  //   };
 
-    let markerPosition = new kakao.maps.LatLng(
-      37.46624030654503,
-      127.03276428109496
-    );
+  //   let markerPosition = new kakao.maps.LatLng(
+  //     37.46624030654503,
+  //     127.03276428109496
+  //   );
 
-    let marker = new kakao.maps.Marker({
-      position: markerPosition,
-    });
+  //   let marker = new kakao.maps.Marker({
+  //     position: markerPosition,
+  //   });
 
-    let map = new kakao.maps.Map(container, options);
+  //   let map = new kakao.maps.Map(container, options);
 
-    marker.setMap(map);
-  });
+  //   marker.setMap(map);
+  // });
 
   return (
     <div className={styles.background}>
