@@ -1,8 +1,43 @@
+import { useEffect, useRef } from "react";
 import styles from "./fourthSection.module.css";
 
-const FourthSection = () => {
+const FourthSection = ({ setViewSection }: any) => {
+  const ref = useRef<HTMLDivElement>(null);
+
+  function onClickLitener() {
+    window.location.href =
+      "https://docs.google.com/forms/d/e/1FAIpQLSfkx0HXsqODLcBOGGuhdJ6WQygBdQk2_Ndr7-5dlES8kGtF-g/viewform";
+  }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (ref.current) {
+        const { top, bottom } = ref.current.getBoundingClientRect();
+
+        let height = 1;
+
+        if (window.innerWidth >= 1023) {
+          height = 112;
+        } else if (window.innerWidth >= 767) {
+          height = 160;
+        } else if (window.innerWidth >= 479) {
+          height = 144;
+        } else {
+          height = 128;
+        }
+
+        if (top <= height && bottom >= height) {
+          setViewSection("fourthSection");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className={styles.background} id="fourthSection">
+    <section className={styles.background} id="fourthSection" ref={ref}>
       <div className={styles.contents}>
         <div className={styles.top}>
           <p className={styles.title}>[무료3] 신학 하는 요즘 애들 모여라!</p>
@@ -39,7 +74,9 @@ const FourthSection = () => {
           </table>
         </div>
         <div className={styles.bottom}>
-          <button>FMC 2023 카카오채널 바로가기</button>
+          <button onClick={() => onClickLitener()}>
+            FMC 2023 카카오채널 바로가기
+          </button>
         </div>
       </div>
     </section>

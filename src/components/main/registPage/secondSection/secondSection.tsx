@@ -3,23 +3,37 @@ import { Link } from "react-scroll";
 
 import styles from "./secondSection.module.css";
 
-const SecondSection = () => {
+const SecondSection = ({ viewSection, setViewSection }: any) => {
   const ref = useRef<HTMLDivElement>(null);
 
   const [scrollEvent, setScrollEvent] = useState(false);
-  const [viewSection, setViewSection] = useState("firstSection");
 
   useEffect(() => {
     const handleScroll = () => {
       if (ref.current) {
-        const { top } = ref.current.getBoundingClientRect();
+        const { top, bottom } = ref.current.getBoundingClientRect();
         const height = window.innerWidth <= 1023 ? 63 : 0;
+        let height2 = 1;
+
+        if (window.innerWidth >= 1023) {
+          height2 = 115;
+        } else if (window.innerWidth >= 767) {
+          height2 = 160;
+        } else if (window.innerWidth >= 479) {
+          height2 = 145;
+        } else {
+          height2 = 130;
+        }
+
         if (top < height) {
           setScrollEvent(true);
         } else {
           setScrollEvent(false);
         }
-        console.log(height);
+
+        if ((top <= 0 && bottom >= height2) || top > 0) {
+          setViewSection("secondSection");
+        }
       }
     };
 
@@ -27,26 +41,10 @@ const SecondSection = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry: any) => {
-          if (entry.isIntersecting) {
-            setViewSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    document.querySelectorAll("section").forEach((section) => {
-      observer.observe(section);
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  function onClickLitener() {
+    window.location.href =
+      "https://docs.google.com/forms/d/e/1FAIpQLSfkx0HXsqODLcBOGGuhdJ6WQygBdQk2_Ndr7-5dlES8kGtF-g/viewform";
+  }
 
   return (
     <section className={styles.background} id="secondSection" ref={ref}>
@@ -144,7 +142,9 @@ const SecondSection = () => {
           </table>
         </div>
         <div className={styles.bottom}>
-          <button>퐁당 네트워크 교회 가입 신청서 작성</button>
+          <button onClick={() => onClickLitener()}>
+            퐁당 네트워크 교회 가입 신청서 작성
+          </button>
         </div>
       </div>
     </section>

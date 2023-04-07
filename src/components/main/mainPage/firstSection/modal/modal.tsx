@@ -39,11 +39,11 @@ const Modal = ({ setModalOpen, modalRef }: propsType) => {
           <Link to="/regist#secondSection" className={styles.btn}>
             퐁당 네트워크 교회 가입
           </Link>
+          <Link to="/regist#fourthSection" className={styles.btn}>
+            신청 개인 참가자 신청
+          </Link>
           <Link to="/regist#thirdSection" className={styles.btn}>
             신학생 인증하고 참가 신청
-          </Link>
-          <Link to="/regist#fourthSection" className={styles.btn}>
-            개인 참가자 신청
           </Link>
           <Link to="/regist#fifthSection" className={styles.btn}>
             퐁당 교회 네트워크 인증

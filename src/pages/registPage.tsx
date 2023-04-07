@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
 import FifthSection from "../components/main/registPage/fifthSection/fifthSection";
 import FirstSection from "../components/main/registPage/firstSection/firstSection";
 import FourthSection from "../components/main/registPage/fourthSection/fourthSection";
@@ -6,6 +7,8 @@ import SecondSection from "../components/main/registPage/secondSection/secondSec
 import ThirdSection from "../components/main/registPage/thirdSection/thirdSection";
 
 const RegistPage = () => {
+  const [viewSection, setViewSection] = useState("firstSection");
+
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
@@ -23,10 +26,13 @@ const RegistPage = () => {
   return (
     <div>
       <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <FourthSection />
-      <FifthSection />
+      <SecondSection
+        viewSection={viewSection}
+        setViewSection={setViewSection}
+      />
+      <ThirdSection setViewSection={setViewSection} />
+      <FourthSection setViewSection={setViewSection} />
+      <FifthSection setViewSection={setViewSection} />
     </div>
   );
 };
