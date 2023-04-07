@@ -1,8 +1,13 @@
 import styles from "./firstSection.module.css";
 
+import rectangle from "../../../../assets/registPage/rectengle.png";
+
 const FirstSection = () => {
   return (
     <section id="firstSection" className={styles.background}>
+      <div className={styles.rectangle}>
+        <img src={rectangle} alt="rectangle" />
+      </div>
       <div className={styles.title}>
         <h1>참가 신청</h1>
       </div>

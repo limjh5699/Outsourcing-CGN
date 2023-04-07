@@ -5,6 +5,7 @@ import styles from "./firstSection.module.css";
 import Modal from "./modal/modal";
 
 import title from "../../../../assets/mainPage/title.png";
+import rectangle from "../../../../assets/mainPage/rectangle.png";
 
 const FirstSection = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -12,7 +13,9 @@ const FirstSection = () => {
 
   return (
     <div className={styles.background}>
-      <div className={styles.ractangle}></div>
+      <div className={styles.ractangle}>
+        <img src={rectangle} alt="rectangle" />
+      </div>
       {modalOpen && <Modal setModalOpen={setModalOpen} modalRef={modalRef} />}
       <div className={styles.content}>
         <img src={title} alt="title" className={styles.img} />

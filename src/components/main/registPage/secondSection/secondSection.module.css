@@ -213,7 +213,7 @@
 
 @media all and (max-width: 479px) {
   .background {
-    height: calc(100vh + 4rem);
+    height: calc(100vh + 8rem);
   }
 
   .background .chatBox {
@@ -244,6 +244,10 @@
     font-size: 0.8rem;
   }
 
+  .background .contents .mid {
+    margin-top: 2rem;
+  }
+
   .background .contents .mid h1 {
     font-size: 1.5rem;
   }
@@ -265,6 +269,10 @@
   .background .contents .mid tr td:first-child {
     text-align: center;
     border-right: 1px solid #fff;
+  }
+
+  .background .contents .bottom {
+    margin-top: 2rem;
   }
 
   .background .contents .bottom button {

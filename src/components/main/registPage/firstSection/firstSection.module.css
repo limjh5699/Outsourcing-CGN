@@ -7,6 +7,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.background .rectangle {
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.background .rectangle img {
+  width: 65vh;
+  position: absolute;
+  bottom: -10vh;
+  right: -18vh;
 }
 
 .background .title {
@@ -104,10 +121,52 @@
   font-weight: 900;
 }
 
+@media (max-width: 1445px) {
+  .background .title {
+    width: 70vw;
+  }
+
+  .background .rectangle img {
+    width: 55vh;
+    bottom: -10vh;
+    right: -15vh;
+  }
+}
+
+@media (max-width: 1384px) {
+  .background .title {
+    width: 80vw;
+  }
+
+  .background .rectangle img {
+    width: 45vh;
+    bottom: -10vh;
+    right: -10vh;
+  }
+}
+
+@media (max-width: 1210px) {
+  .background .title {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 1080px) {
+  .background .title {
+    width: 90vw;
+  }
+}
+
 @media all and (min-width: 768px) and (max-width: 1023px) {
   .background {
     height: 55rem;
     padding-top: 4rem;
+  }
+
+  .background .rectangle img {
+    width: 40vh;
+    bottom: -15vh;
+    right: -10vh;
   }
 
   .background .title {
@@ -168,6 +227,12 @@
   .background {
     height: 50rem;
     padding-top: 4rem;
+  }
+
+  .background .rectangle img {
+    width: 33vh;
+    bottom: -15vh;
+    right: -10vh;
   }
 
   .background .title {
@@ -231,6 +296,12 @@
     padding-top: 4rem;
   }
 
+  .background .rectangle img {
+    width: 30vh;
+    bottom: -15vh;
+    right: -8vh;
+  }
+
   .background .title {
     top: 6rem;
   }
@@ -284,29 +355,5 @@
   .background .contents .box .box3 {
     margin: 0;
     width: 100px;
-  }
-}
-
-@media (max-width: 1445px) {
-  .background .title {
-    width: 70vw;
-  }
-}
-
-@media (max-width: 1384px) {
-  .background .title {
-    width: 80vw;
-  }
-}
-
-@media (max-width: 1210px) {
-  .background .title {
-    width: 90vw;
-  }
-}
-
-@media (max-width: 1080px) {
-  .background .title {
-    width: 90vw;
   }
 }

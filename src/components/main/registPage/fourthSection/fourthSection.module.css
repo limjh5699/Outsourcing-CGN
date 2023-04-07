@@ -22,7 +22,7 @@
 }
 
 .background .contents .mid {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .background .contents .mid h1 {
@@ -85,7 +85,7 @@
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
   .background {
-    height: 100vh;
+    height: calc(100vh + 11rem);
   }
 
   .background .box,
@@ -101,7 +101,7 @@
 
 @media all and (min-width: 480px) and (max-width: 767px) {
   .background {
-    height: 100vh;
+    height: calc(100vh + 8rem);
   }
 
   .background .chatBox {
@@ -141,7 +141,7 @@
 
 @media all and (max-width: 479px) {
   .background {
-    height: 100vh;
+    height: calc(100vh + 8rem);
   }
 
   .background .chatBox {
